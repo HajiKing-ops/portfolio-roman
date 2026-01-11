@@ -1,0 +1,605 @@
+/* ========================================
+   FICHIER CSS - STYLE DU PORTFOLIO
+   Ce fichier contient tout le design visuel du site
+   ======================================== */
+
+/* ========== RESET ET BASE ========== */
+/* Supprime les marges et espacements par défaut du navigateur */
+* {
+    margin: 0;              /* Supprime toutes les marges extérieures */
+    padding: 0;             /* Supprime tous les espacements intérieurs */
+    box-sizing: border-box; /* Inclut les bordures dans la taille totale des éléments */
+}
+
+/* Style général du corps de la page */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    /* Police moderne et propre qui s'adapte au système */
+    background: #0a0a0a;    /* Couleur de fond noire */
+    color: #e0e0e0;         /* Couleur du texte gris clair */
+    line-height: 1.6;       /* Espacement entre les lignes de texte (1.6 fois la hauteur) */
+    overflow-x: hidden;     /* Empêche le défilement horizontal */
+}
+
+/* Conteneur principal pour centrer le contenu */
+.container {
+    max-width: 1200px;      /* Largeur maximale de 1200 pixels */
+    margin: 0 auto;         /* Centre le conteneur horizontalement */
+    padding: 0 20px;        /* Espacement de 20px à gauche et à droite */
+}
+
+/* ========== HEADER / NAVIGATION ========== */
+/* En-tête fixe en haut de la page */
+header {
+    position: fixed;        /* Reste en haut même quand on scroll */
+    top: 0;                 /* Collé en haut de la page */
+    width: 100%;            /* Prend toute la largeur */
+    background: rgba(10, 10, 10, 0.95); /* Fond noir presque opaque (95%) */
+    backdrop-filter: blur(10px); /* Effet de flou sur ce qui est derrière */
+    z-index: 1000;          /* S'affiche au-dessus des autres éléments */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Bordure blanche transparente en bas */
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;          /* Utilise Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espace entre le logo et les liens */
+    align-items: center;    /* Centre verticalement */
+    padding: 20px 0;        /* Espacement en haut et en bas */
+}
+
+/* Style du logo (vos initiales "RS") */
+.logo {
+    font-size: 24px;        /* Taille du texte */
+    font-weight: bold;      /* Texte en gras */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Dégradé de couleur violet-bleu */
+    -webkit-background-clip: text; /* Le dégradé s'applique au texte (Safari/Chrome) */
+    -webkit-text-fill-color: transparent; /* Rend le texte transparent pour voir le dégradé */
+    background-clip: text;  /* Le dégradé s'applique au texte (standard) */
+}
+
+/* Liste des liens de navigation */
+.nav-links {
+    display: flex;          /* Aligne les liens horizontalement */
+    gap: 30px;              /* Espace de 30px entre chaque lien */
+    list-style: none;       /* Supprime les puces de la liste */
+}
+
+/* Style des liens de navigation */
+.nav-links a {
+    color: #e0e0e0;         /* Couleur du texte */
+    text-decoration: none;  /* Supprime le soulignement */
+    transition: color 0.3s; /* Animation douce du changement de couleur (0.3 secondes) */
+    font-size: 14px;        /* Taille du texte */
+    text-transform: uppercase; /* Transforme en MAJUSCULES */
+    letter-spacing: 1px;    /* Espace entre les lettres */
+}
+
+/* Effet au survol des liens */
+.nav-links a:hover {
+    color: #667eea;         /* Change la couleur en violet au survol */
+}
+
+/* ========== SECTION HERO (PAGE D'ACCUEIL) ========== */
+/* Section principale de la page d'accueil */
+.hero {
+    min-height: 100vh;      /* Prend au minimum toute la hauteur de l'écran */
+    display: flex;          /* Utilise Flexbox */
+    align-items: center;    /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    padding-top: 80px;      /* Espace en haut pour ne pas être caché par le header */
+    position: relative;     /* Pour positionner les éléments enfants */
+}
+
+/* Contenu de la section hero */
+.hero-content {
+    text-align: center;     /* Centre le texte */
+    z-index: 2;             /* S'affiche au-dessus du fond animé */
+}
+
+/* Titre principal avec votre nom */
+.hero h1 {
+    font-size: 72px;        /* Très grande taille */
+    margin-bottom: 10px;    /* Espace en bas */
+    font-weight: 800;       /* Très gras */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Dégradé violet-bleu */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 1s ease; /* Animation d'apparition depuis le bas */
+}
+
+/* Sous-titre (BTS SIO - SLAM) */
+.hero .subtitle {
+    font-size: 28px;
+    color: #667eea;         /* Couleur violette */
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease 0.2s both;
+    /* Animation avec un délai de 0.2 secondes */
+}
+
+/* Paragraphe de description */
+.hero p {
+    font-size: 18px;
+    color: #a0a0a0;         /* Gris moyen */
+    margin-bottom: 30px;
+    max-width: 700px;       /* Largeur maximale pour la lisibilité */
+    margin-left: auto;      /* Centre horizontalement */
+    margin-right: auto;
+    animation: fadeInUp 1s ease 0.3s both;
+    /* Animation avec un délai de 0.3 secondes */
+}
+
+/* Conteneur des boutons d'action */
+.cta-buttons {
+    display: flex;
+    gap: 20px;              /* Espace entre les boutons */
+    justify-content: center;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+/* Style des boutons d'action */
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;     /* Espacement intérieur */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Dégradé violet-bleu */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;    /* Coins très arrondis */
+    font-weight: 600;       /* Gras */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Animations pour le survol */
+}
+
+/* Effet au survol du bouton */
+.cta-button:hover {
+    transform: translateY(-3px); /* Monte le bouton de 3 pixels */
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    /* Ajoute une ombre violette */
+}
+
+/* Bouton secondaire (transparent) */
+.cta-button.secondary {
+    background: transparent;
+    border: 2px solid #667eea; /* Bordure violette */
+}
+
+/* Informations de contact sous les boutons */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;        /* Permet de passer à la ligne sur mobile */
+    animation: fadeInUp 1s ease 0.5s both;
+}
+
+/* Style de chaque élément de contact */
+.contact-item {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+/* ========== SECTIONS GÉNÉRALES ========== */
+/* Style appliqué à toutes les sections */
+section {
+    padding: 100px 0;       /* Espace en haut et en bas */
+}
+
+/* Titres des sections (h2) */
+h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Sous-titres des sections */
+.section-subtitle {
+    text-align: center;
+    color: #a0a0a0;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+/* ========== SECTION À PROPOS ========== */
+/* Contenu en 2 colonnes */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes égales */
+    gap: 60px;              /* Espace entre les colonnes */
+    align-items: center;
+}
+
+/* Paragraphes de la section à propos */
+.about-text p {
+    color: #a0a0a0;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Conteneur des badges de langues */
+.languages {
+    display: flex;
+    flex-wrap: wrap;        /* Permet de passer à la ligne */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Style d'un badge de langue */
+.language-badge {
+    background: rgba(102, 126, 234, 0.2); /* Fond violet transparent */
+    padding: 8px 20px;
+    border-radius: 20px;    /* Coins arrondis */
+    color: #667eea;
+    font-size: 14px;
+    border: 1px solid rgba(102, 126, 234, 0.3); /* Bordure violette */
+}
+
+/* Grille des qualités */
+.qualities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Colonnes qui s'adaptent automatiquement */
+    gap: 20px;
+}
+
+/* Case d'une qualité */
+.quality-item {
+    background: rgba(255, 255, 255, 0.05); /* Fond légèrement blanc */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;   /* Animation douce */
+}
+
+/* Effet au survol d'une qualité */
+.quality-item:hover {
+    background: rgba(102, 126, 234, 0.1); /* Fond violet au survol */
+    border-color: rgba(102, 126, 234, 0.5);
+    transform: translateY(-5px); /* Monte de 5 pixels */
+}
+
+/* ========== SECTION EXPÉRIENCE (TIMELINE) ========== */
+/* Conteneur de la timeline */
+.experience-timeline {
+    position: relative;
+    padding-left: 40px;     /* Espace à gauche pour la ligne */
+    margin-top: 40px;
+}
+
+/* Ligne verticale de la timeline */
+.experience-timeline::before {
+    content: '';            /* Élément vide pour créer la ligne */
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;             /* Largeur de la ligne */
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    /* Dégradé vertical */
+}
+
+/* Une case d'expérience dans la timeline */
+.experience-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    transition: all 0.3s;
+}
+
+/* Point sur la ligne de timeline */
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -47px;            /* Positionné sur la ligne */
+    top: 30px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;     /* Forme ronde */
+    background: #667eea;    /* Couleur violette */
+    border: 3px solid #0a0a0a; /* Bordure noire pour le contraste */
+}
+
+/* Effet au survol d'une expérience */
+.experience-item:hover {
+    transform: translateX(10px); /* Déplace vers la droite */
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.5);
+}
+
+/* En-tête d'une expérience (titre + date) */
+.experience-header {
+    display: flex;
+    justify-content: space-between; /* Espace entre titre et date */
+    align-items: start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Titre du poste/formation */
+.experience-title {
+    font-size: 22px;
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Période de l'expérience */
+.experience-period {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+/* Nom de l'entreprise/école */
+.experience-company {
+    color: #e0e0e0;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Description de l'expérience */
+.experience-description {
+    color: #a0a0a0;
+    line-height: 1.8;
+}
+
+/* Liste dans la description */
+.experience-description ul {
+    list-style: none;       /* Supprime les puces par défaut */
+    padding-left: 0;
+}
+
+/* Élément de liste dans la description */
+.experience-description li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+/* Flèche personnalisée devant chaque élément */
+.experience-description li::before {
+    content: '▹';           /* Caractère flèche */
+    position: absolute;
+    left: 0;
+    color: #667eea;
+}
+
+/* ========== SECTION COMPÉTENCES ========== */
+/* Grille des catégories de compétences */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Colonnes adaptatives d'au moins 250px */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Une catégorie de compétences */
+.skill-category {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+/* Effet au survol d'une catégorie */
+.skill-category:hover {
+    background: rgba(102, 126, 234, 0.1);
+    border-color: rgba(102, 126, 234, 0.5);
+    transform: translateY(-5px);
+}
+
+/* Titre d'une catégorie de compétences */
+.skill-category h3 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Conteneur des badges de compétences */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Un badge de compétence */
+.skill-tag {
+    background: rgba(102, 126, 234, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #e0e0e0;
+    border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+/* ========== BANNIÈRE STAGE ========== */
+/* Bannière mise en évidence pour la recherche de stage */
+.internship-banner {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+    border: 2px solid #667eea;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Titre de la bannière */
+.internship-banner h3 {
+    font-size: 32px;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+/* Paragraphes dans la bannière */
+.internship-banner p {
+    color: #e0e0e0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* ========== FOOTER (PIED DE PAGE) ========== */
+footer {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Contenu du footer */
+.footer-content {
+    margin-bottom: 20px;
+}
+
+/* Liens du footer */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Style des liens dans le footer */
+.footer-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Effet au survol des liens du footer */
+.footer-links a:hover {
+    color: #667eea;
+}
+
+/* ========== ANIMATION DE FOND ========== */
+/* Conteneur pour les cercles animés */
+.background-animation {
+    position: fixed;        /* Reste en place pendant le scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;             /* Derrière tout le contenu */
+    pointer-events: none;   /* Ne bloque pas les clics */
+}
+
+/* Style des cercles flottants */
+.circle {
+    position: absolute;
+    border-radius: 50%;     /* Forme ronde */
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.2), transparent);
+    /* Dégradé radial : violet au centre, transparent sur les bords */
+    animation: float 20s infinite; /* Animation de flottement infinie de 20 secondes */
+}
+
+/* Position et taille du premier cercle */
+.circle:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;    /* Commence immédiatement */
+}
+
+/* Position et taille du deuxième cercle */
+.circle:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    top: 60%;
+    right: 20%;
+    animation-delay: 5s;    /* Commence après 5 secondes */
+}
+
+/* Position et taille du troisième cercle */
+.circle:nth-child(3) {
+    width: 250px;
+    height: 250px;
+    bottom: 10%;
+    left: 50%;
+    animation-delay: 10s;   /* Commence après 10 secondes */
+}
+
+/* ========== ANIMATIONS ========== */
+/* Animation de flottement pour les cercles */
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0); /* Position de départ et de fin */
+    }
+    33% {
+        transform: translate(50px, -50px); /* Mouvement vers le haut-droite */
+    }
+    66% {
+        transform: translate(-50px, 50px); /* Mouvement vers le bas-gauche */
+    }
+}
+
+/* Animation d'apparition depuis le bas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;         /* Invisible au début */
+        transform: translateY(30px); /* 30px plus bas */
+    }
+    to {
+        opacity: 1;         /* Totalement visible */
+        transform: translateY(0); /* Position normale */
+    }
+}
+
+/* ========== RESPONSIVE (ADAPTATION MOBILE) ========== */
+/* Styles pour les écrans de moins de 768px de large (tablettes et mobiles) */
+@media (max-width: 768px) {
+    /* Réduit la taille du titre principal sur mobile */
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    /* Réduit la taille du sous-titre */
+    .hero .subtitle {
+        font-size: 22px;
+    }
+
+    /* Réduit la taille du paragraphe */
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Réduit la taille des titres de section */
+    h2 {
+        font-size: 36px;
+    }
+
+    /* Réduit l'espace entre les liens de navigation */
+    .nav-links {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    /* Passe la section à propos en une seule colonne */
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Empile les boutons verticalement sur mobile */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Réduit l'espace à gauche de la timeline */
+    .experience-timeline {
+        padding-left: 30px;
+    }
+}

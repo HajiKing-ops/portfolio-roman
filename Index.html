@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!-- Déclaration du type de document HTML5 -->
+<html lang="fr">
+<!-- Balise principale HTML avec la langue française -->
+
+<head>
+    <!-- En-tête de la page (informations non visibles) -->
+    <meta charset="UTF-8">
+    <!-- Définit l'encodage des caractères pour supporter les accents français -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Rend le site responsive (adaptable aux mobiles et tablettes) -->
+    
+    <title>Roman SALAMZADA - Développeur SLAM</title>
+    <!-- Titre qui apparaît dans l'onglet du navigateur -->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Lien vers le fichier CSS externe pour le design -->
+</head>
+
+<body>
+    <!-- Corps de la page (tout ce qui est visible) -->
+
+    <!-- ========== ANIMATION DE FOND ========== -->
+    <div class="background-animation">
+        <!-- Conteneur pour les cercles animés en arrière-plan -->
+        <div class="circle"></div>
+        <!-- Premier cercle flottant -->
+        <div class="circle"></div>
+        <!-- Deuxième cercle flottant -->
+        <div class="circle"></div>
+        <!-- Troisième cercle flottant -->
+    </div>
+
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header>
+        <!-- En-tête fixe en haut de la page -->
+        <nav class="container">
+            <!-- Barre de navigation -->
+            <div class="logo">RS</div>
+            <!-- Logo avec vos initiales -->
+            
+            <ul class="nav-links">
+                <!-- Liste des liens de navigation -->
+                <li><a href="#home">Accueil</a></li>
+                <!-- Lien vers la section Accueil -->
+                <li><a href="#about">À propos</a></li>
+                <!-- Lien vers la section À propos -->
+                <li><a href="#experience">Expérience</a></li>
+                <!-- Lien vers la section Expérience -->
+                <li><a href="#skills">Compétences</a></li>
+                <!-- Lien vers la section Compétences -->
+                <li><a href="#contact">Contact</a></li>
+                <!-- Lien vers la section Contact -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== SECTION HERO (PAGE D'ACCUEIL) ========== -->
+    <section id="home" class="hero">
+        <!-- Section principale de la page d'accueil -->
+        <div class="hero-content container">
+            <!-- Conteneur centré pour le contenu principal -->
+            
+            <h1>Roman SALAMZADA</h1>
+            <!-- Titre principal avec votre nom (h1 = heading 1, le plus important) -->
+            
+            <p class="subtitle">Étudiant BTS SIO – SLAM</p>
+            <!-- Sous-titre avec votre formation -->
+            
+            <p>Développeur passionné par le C et Python, avec une expérience solide en diagnostic et réparation informatique. À la recherche d'un stage de 6 semaines en développement embarqué C.</p>
+            <!-- Paragraphe de description -->
+            
+            <div class="cta-buttons">
+                <!-- Conteneur pour les boutons d'action (CTA = Call To Action) -->
+                <a href="#contact" class="cta-button">Me contacter</a>
+                <!-- Bouton principal pour vous contacter -->
+                <a href="#experience" class="cta-button secondary">Mon parcours</a>
+                <!-- Bouton secondaire pour voir votre parcours -->
+            </div>
+            
+            <div class="contact-info">
+                <!-- Conteneur pour vos informations de contact -->
+                <span class="contact-item">📍 Aubusson (23200)</span>
+                <!-- Votre localisation avec emoji -->
+                <span class="contact-item">📧 romansalamzada50@gmail.com</span>
+                <!-- Votre email -->
+                <span class="contact-item">📱 06 05 85 81 98</span>
+                <!-- Votre téléphone -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION À PROPOS ========== -->
+    <section id="about" class="container">
+        <!-- Section pour parler de vous -->
+        
+        <h2>À propos</h2>
+        <!-- Titre de la section (h2 = heading 2, moins important que h1) -->
+        
+        <div class="about-content">
+            <!-- Conteneur en 2 colonnes pour le contenu -->
+            
+            <div class="about-text">
+                <!-- Colonne de gauche : texte -->
+                
+                <p>Étudiant en BTS SIO option SLAM, je suis passionné par le développement logiciel et les systèmes embarqués. Mon parcours m'a permis d'acquérir une solide expérience technique, notamment grâce à mes 7 mois chez Co'ordi où j'ai développé ma rigueur et mon sens du diagnostic.</p>
+                <!-- Premier paragraphe de présentation -->
+                
+                <p>J'ai également participé à la Piscine de l'École 42 à Angoulême, une immersion intensive d'un mois axée sur le langage C et l'algorithmique. Cette expérience m'a confirmé ma passion pour la programmation bas niveau et le développement embarqué.</p>
+                <!-- Deuxième paragraphe -->
+                
+                <p>Je poursuis actuellement ma formation à la HTB Academy avec un focus sur Linux, Windows et les bases de la cybersécurité.</p>
+                <!-- Troisième paragraphe -->
+                
+                <h3 style="color: #667eea; margin-top: 30px; margin-bottom: 15px;">Langues</h3>
+                <!-- Sous-titre pour les langues (h3 = heading 3) -->
+                
+                <div class="languages">
+                    <!-- Conteneur pour les badges de langues -->
+                    <span class="language-badge">Français</span>
+                    <span class="language-badge">Anglais</span>
+                    <span class="language-badge">Persan</span>
+                    <span class="language-badge">Ourdou</span>
+                    <span class="language-badge">Pachto</span>
+                    <!-- Chaque langue dans un badge -->
+                </div>
+            </div>
+            
+            <div class="qualities-grid">
+                <!-- Colonne de droite : grille de qualités -->
+                
+                <div class="quality-item">
+                    <h4>✓ Rigueur</h4>
+                    <!-- Case pour une qualité (h4 = heading 4) -->
+                </div>
+                <div class="quality-item">
+                    <h4>✓ Autonomie</h4>
+                </div>
+                <div class="quality-item">
+                    <h4>✓ Esprit d'analyse</h4>
+                </div>
+                <div class="quality-item">
+                    <h4>✓ Apprentissage rapide</h4>
+                </div>
+                <div class="quality-item">
+                    <h4>✓ Sens de la qualité</h4>
+                </div>
+                <div class="quality-item">
+                    <h4>✓ Esprit d'équipe</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION EXPÉRIENCE ========== -->
+    <section id="experience" class="container">
+        <!-- Section pour votre parcours professionnel -->
+        
+        <h2>Expérience & Formation</h2>
+        <!-- Titre de la section -->
+        
+        <p class="section-subtitle">Mon parcours professionnel et académique</p>
+        <!-- Sous-titre descriptif -->
+        
+        <div class="experience-timeline">
+            <!-- Timeline (ligne du temps) pour vos expériences -->
+            
+            <!-- EXPÉRIENCE 1 : BTS SIO -->
+            <div class="experience-item">
+                <!-- Une case d'expérience -->
+                
+                <div class="experience-header">
+                    <!-- En-tête de l'expérience (titre + date) -->
+                    <div>
+                        <div class="experience-title">BTS SIO – Option SLAM</div>
+                        <!-- Titre du poste/formation -->
+                        <div class="experience-company">Lycée Eugène Jamot, Aubusson</div>
+                        <!-- Nom de l'établissement -->
+                    </div>
+                    <div class="experience-period">Depuis septembre 2025</div>
+                    <!-- Période -->
+                </div>
+                
+                <div class="experience-description">
+                    <!-- Description de l'expérience -->
+                    Formation en développement logiciel et applications métiers avec focus sur la programmation, les bases de données et l'architecture logicielle.
+                </div>
+            </div>
+
+            <!-- EXPÉRIENCE 2 : Co'ordi -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Technicien informatique – Diagnostic & Réparation</div>
+                        <div class="experience-company">Co'ordi, Guéret</div>
+                    </div>
+                    <div class="experience-period">Janvier 2025 – Août 2025</div>
+                </div>
+                
+                <div class="experience-description">
+                    <ul>
+                        <!-- Liste à puces pour les tâches -->
+                        <li>Diagnostic matériel et logiciel (PC fixes, portables, téléphones)</li>
+                        <li>Réparation et remplacement de composants (écran, RAM, SSD/HDD)</li>
+                        <li>Installation et préparation systèmes (Linux/Windows), mises à jour, tests</li>
+                        <li>Assemblage et configuration de PC (bureautique / gaming)</li>
+                        <li>Support et résolution d'incidents, procédures et contrôle qualité</li>
+                        <li>Traçabilité des interventions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- EXPÉRIENCE 3 : École 42 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">École 42 (Angoulême) – Piscine</div>
+                        <div class="experience-company">École 42, Angoulême</div>
+                    </div>
+                    <div class="experience-period">Juillet 2024 – Août 2024</div>
+                </div>
+                
+                <div class="experience-description">
+                    Immersion intensive d'un mois : apprentissage intensif du C, algorithmique, gestion de projets, et évaluation par les pairs (peer-review).
+                </div>
+            </div>
+
+            <!-- EXPÉRIENCE 4 : FEL -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Français Langue Étrangère</div>
+                        <div class="experience-company">FEL, Guéret</div>
+                    </div>
+                    <div class="experience-period">Décembre 2023 – Avril 2024</div>
+                </div>
+                
+                <div class="experience-description">
+                    Obtention des niveaux A1 (décembre 2023 - mars 2024) et A2 (avril 2024).
+                </div>
+            </div>
+
+            <!-- EXPÉRIENCE 5 : Formation initiale -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Formation informatique</div>
+                        <div class="experience-company">Lycée anglais d'Esteqlal, Kaboul, Afghanistan</div>
+                    </div>
+                    <div class="experience-period">2017 – 2018</div>
+                </div>
+                
+                <div class="experience-description">
+                    Initiation au développement (HTML/CSS, bases C/C++), matériel/logiciel, Windows, installation/configuration. Découverte de Python, PHP, MySQL, C#.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION COMPÉTENCES ========== -->
+    <section id="skills" class="container">
+        <!-- Section pour vos compétences techniques -->
+        
+        <h2>Compétences</h2>
+        <!-- Titre de la section -->
+        
+        <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+        <!-- Sous-titre -->
+        
+        <div class="skills-grid">
+            <!-- Grille pour organiser les catégories de compétences -->
+            
+            <!-- CATÉGORIE 1 : Langages de programmation -->
+            <div class="skill-category">
+                <h3>💻 Langages de programmation</h3>
+                <!-- Titre de la catégorie avec emoji -->
+                
+                <div class="skill-tags">
+                    <!-- Conteneur pour les badges de compétences -->
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C# (bases)</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <!-- Chaque compétence dans un badge -->
+                </div>
+            </div>
+
+            <!-- CATÉGORIE 2 : Bases de données -->
+            <div class="skill-category">
+                <h3>🗄️ Bases de données</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                </div>
+            </div>
+
+            <!-- CATÉGORIE 3 : Systèmes d'exploitation -->
+            <div class="skill-category">
+                <h3>🖥️ Systèmes d'exploitation</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Windows</span>
+                </div>
+            </div>
+
+            <!-- CATÉGORIE 4 : Outils & Technologies -->
+            <div class="skill-category">
+                <h3>🔧 Outils & Technologies</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Nmap</span>
+                    <span class="skill-tag">Hashcat</span>
+                    <span class="skill-tag">ffuf</span>
+                    <span class="skill-tag">HTB Academy</span>
+                </div>
+            </div>
+
+            <!-- CATÉGORIE 5 : Hardware & Maintenance -->
+            <div class="skill-category">
+                <h3>🔩 Hardware & Maintenance</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Diagnostic PC</span>
+                    <span class="skill-tag">Réparation matériel</span>
+                    <span class="skill-tag">Assemblage PC</span>
+                    <span class="skill-tag">Tests & validation</span>
+                </div>
+            </div>
+
+            <!-- CATÉGORIE 6 : Cybersécurité -->
+            <div class="skill-category">
+                <h3>🛡️ Cybersécurité (en cours)</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Tests web (lab)</span>
+                    <span class="skill-tag">Sécurité mots de passe</span>
+                    <span class="skill-tag">Évaluation authentification</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- BANNIÈRE RECHERCHE DE STAGE -->
+        <div class="internship-banner">
+            <!-- Zone mise en évidence pour la recherche de stage -->
+            <h3>🎯 Recherche de stage</h3>
+            <p><strong>Stage BTS SIO SLAM – Développement embarqué C</strong></p>
+            <p>6 semaines : 16 mai – 03 juillet 2026</p>
+            <p>Présentiel à Limoges (logement sur place)</p>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER (PIED DE PAGE) ========== -->
+    <footer id="contact">
+        <!-- Section de contact en bas de page -->
+        
+        <div class="container">
+            <div class="footer-content">
+                <h3 style="color: #667eea; margin-bottom: 20px;">Restons en contact</h3>
+                <!-- Titre de la section contact -->
+                
+                <div class="footer-links">
+                    <!-- Liens de contact -->
+                    <a href="mailto:romansalamzada50@gmail.com">📧 romansalamzada50@gmail.com</a>
+                    <!-- Lien email (mailto: ouvre le client email) -->
+                    <a href="tel:+33605858198">📱 06 05 85 81 98</a>
+                    <!-- Lien téléphone (tel: permet d'appeler sur mobile) -->
+                    <a href="#">📍 Aubusson (23200)</a>
+                    <!-- Localisation -->
+                </div>
+            </div>
+            
+            <p style="color: #666;">&copy; 2026 Roman SALAMZADA. Tous droits réservés.</p>
+            <!-- Copyright (© est le symbole copyright) -->
+        </div>
+    </footer>
+
+    <!-- ========== LIEN VERS LE JAVASCRIPT ========== -->
+    <script src="script.js"></script>
+    <!-- Lien vers le fichier JavaScript externe pour l'interactivité -->
+    
+</body>
+</html>
