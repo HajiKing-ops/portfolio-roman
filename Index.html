@@ -1,380 +1,2259 @@
-<!DOCTYPE html>
-<!-- Déclaration du type de document HTML5 -->
+<!doctype html>
+
 <html lang="fr">
-<!-- Balise principale HTML avec la langue française -->
-
-<head>
-    <!-- En-tête de la page (informations non visibles) -->
-    <meta charset="UTF-8">
-    <!-- Définit l'encodage des caractères pour supporter les accents français -->
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Rend le site responsive (adaptable aux mobiles et tablettes) -->
-    
-    <title>Roman SALAMZADA - Développeur SLAM</title>
-    <!-- Titre qui apparaît dans l'onglet du navigateur -->
-    
-    <link rel="stylesheet" href="style.css">
-    <!-- Lien vers le fichier CSS externe pour le design -->
-</head>
-
-<body>
-    <!-- Corps de la page (tout ce qui est visible) -->
-
-    <!-- ========== ANIMATION DE FOND ========== -->
-    <div class="background-animation">
-        <!-- Conteneur pour les cercles animés en arrière-plan -->
-        <div class="circle"></div>
-        <!-- Premier cercle flottant -->
-        <div class="circle"></div>
-        <!-- Deuxième cercle flottant -->
-        <div class="circle"></div>
-        <!-- Troisième cercle flottant -->
-    </div>
-
-    <!-- ========== HEADER / NAVIGATION ========== -->
-    <header>
-        <!-- En-tête fixe en haut de la page -->
-        <nav class="container">
-            <!-- Barre de navigation -->
-            <div class="logo">RS</div>
-            <!-- Logo avec vos initiales -->
-            
-            <ul class="nav-links">
-                <!-- Liste des liens de navigation -->
-                <li><a href="#home">Accueil</a></li>
-                <!-- Lien vers la section Accueil -->
-                <li><a href="#about">À propos</a></li>
-                <!-- Lien vers la section À propos -->
-                <li><a href="#experience">Expérience</a></li>
-                <!-- Lien vers la section Expérience -->
-                <li><a href="#skills">Compétences</a></li>
-                <!-- Lien vers la section Compétences -->
-                <li><a href="#contact">Contact</a></li>
-                <!-- Lien vers la section Contact -->
-            </ul>
-        </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <title>Roman Salamzada — Portfolio BTS SIO SLAM</title>
+    <link href="style.css" rel="stylesheet" />
+    <meta
+      content="Portfolio de Roman Salamzada, étudiant en BTS SIO SLAM : développement backend, systèmes et cybersécurité. À la recherche d’un stage de deuxième année."
+      name="description"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#accueil">Aller au contenu</a>
+    <!-- Navigation-->
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo" href="#accueil">RS.</a>
+        <ul class="nav-links">
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#realisations">Projets</a></li>
+          <li><a href="#stages">Expériences</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#certifications">Formations</a></li>
+          <li><a href="#veille">Veille</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button aria-label="Ouvrir le menu" class="menu-toggle">☰</button>
+      </nav>
     </header>
-
-    <!-- ========== SECTION HERO (PAGE D'ACCUEIL) ========== -->
-    <section id="home" class="hero">
-        <!-- Section principale de la page d'accueil -->
-        <div class="hero-content container">
-            <!-- Conteneur centré pour le contenu principal -->
-            
-            <h1>Roman SALAMZADA</h1>
-            <!-- Titre principal avec votre nom (h1 = heading 1, le plus important) -->
-            
-            <p class="subtitle">Étudiant BTS SIO – SLAM</p>
-            <!-- Sous-titre avec votre formation -->
-            
-            <p>Développeur passionné par le C et Python, avec une expérience solide en diagnostic et réparation informatique. À la recherche d'un stage de 6 semaines en développement embarqué C.</p>
-            <!-- Paragraphe de description -->
-            
-            <div class="cta-buttons">
-                <!-- Conteneur pour les boutons d'action (CTA = Call To Action) -->
-                <a href="#contact" class="cta-button">Me contacter</a>
-                <!-- Bouton principal pour vous contacter -->
-                <a href="#experience" class="cta-button secondary">Mon parcours</a>
-                <!-- Bouton secondaire pour voir votre parcours -->
-            </div>
-            
-            <div class="contact-info">
-                <!-- Conteneur pour vos informations de contact -->
-                <span class="contact-item">📍 Aubusson (23200)</span>
-                <!-- Votre localisation avec emoji -->
-                <span class="contact-item">📧 romansalamzada50@gmail.com</span>
-                <!-- Votre email -->
-                <span class="contact-item">📱 06 05 85 81 98</span>
-                <!-- Votre téléphone -->
-            </div>
+    <!-- ACCUEIL -->
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero-content">
+          <p class="eyebrow">PORTFOLIO · BTS SIO SLAM</p>
+          <p class="availability">À la recherche d’un stage de 2e année</p>
+          <h1>Roman<br />Salamzada<span class="accent">.</span></h1>
+          <h2>Étudiant en BTS SIO SLAM</h2>
+          <p class="positioning">
+            Développement backend · Systèmes · Cybersécurité
+          </p>
+          <p class="hero-description">
+            Comprendre, développer et expérimenter. Je construis mes compétences
+            à travers ma formation, mes projets et mes expériences
+            professionnelles.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#realisations"
+              >Découvrir mes projets ↗</a
+            ><a
+              class="btn btn-secondary"
+              download=""
+              href="cv/roman-salamzada-public.pdf"
+              >Télécharger mon CV</a
+            >
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/HajiKing-ops">GitHub ↗</a
+            ><a href="https://linkedin.com/in/roman-salamzada-it">LinkedIn ↗</a
+            ><a href="mailto:romansalamzada50@gmail.com">Email ↗</a>
+          </div>
         </div>
-    </section>
-
-    <!-- ========== SECTION À PROPOS ========== -->
-    <section id="about" class="container">
-        <!-- Section pour parler de vous -->
-        
-        <h2>À propos</h2>
-        <!-- Titre de la section (h2 = heading 2, moins important que h1) -->
-        
-        <div class="about-content">
-            <!-- Conteneur en 2 colonnes pour le contenu -->
-            
-            <div class="about-text">
-                <!-- Colonne de gauche : texte -->
-                
-                <p>Étudiant en BTS SIO option SLAM, je suis passionné par le développement logiciel et les systèmes embarqués. Mon parcours m'a permis d'acquérir une solide expérience technique, notamment grâce à mes 7 mois chez Co'ordi où j'ai développé ma rigueur et mon sens du diagnostic.</p>
-                <!-- Premier paragraphe de présentation -->
-                
-                <p>J'ai également participé à la Piscine de l'École 42 à Angoulême, une immersion intensive d'un mois axée sur le langage C et l'algorithmique. Cette expérience m'a confirmé ma passion pour la programmation bas niveau et le développement embarqué.</p>
-                <!-- Deuxième paragraphe -->
-                
-                <p>Je poursuis actuellement ma formation à la HTB Academy avec un focus sur Linux, Windows et les bases de la cybersécurité.</p>
-                <!-- Troisième paragraphe -->
-                
-                <h3 style="color: #667eea; margin-top: 30px; margin-bottom: 15px;">Langues</h3>
-                <!-- Sous-titre pour les langues (h3 = heading 3) -->
-                
-                <div class="languages">
-                    <!-- Conteneur pour les badges de langues -->
-                    <span class="language-badge">Français</span>
-                    <span class="language-badge">Anglais</span>
-                    <span class="language-badge">Persan</span>
-                    <span class="language-badge">Ourdou</span>
-                    <span class="language-badge">Pachto</span>
-                    <!-- Chaque langue dans un badge -->
-                </div>
-            </div>
-            
-            <div class="qualities-grid">
-                <!-- Colonne de droite : grille de qualités -->
-                
-                <div class="quality-item">
-                    <h4>✓ Rigueur</h4>
-                    <!-- Case pour une qualité (h4 = heading 4) -->
-                </div>
-                <div class="quality-item">
-                    <h4>✓ Autonomie</h4>
-                </div>
-                <div class="quality-item">
-                    <h4>✓ Esprit d'analyse</h4>
-                </div>
-                <div class="quality-item">
-                    <h4>✓ Apprentissage rapide</h4>
-                </div>
-                <div class="quality-item">
-                    <h4>✓ Sens de la qualité</h4>
-                </div>
-                <div class="quality-item">
-                    <h4>✓ Esprit d'équipe</h4>
-                </div>
-            </div>
+        <figure class="hero-portrait">
+          <img
+            alt="Portrait de Roman Salamzada devant ses écrans"
+            height="1448"
+            src="images/profile/roman-portrait.jpeg"
+            width="1086"
+          />
+          <figcaption>
+            Apprendre par la pratique.<span
+              >Du backend aux infrastructures.</span
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <section class="apropos-section" id="apropos">
+        <p class="eyebrow">01 / À PROPOS</p>
+        <h2>Une curiosité devenue un parcours.</h2>
+        <div class="about-copy">
+          <p>
+            Passionné par l’informatique depuis mon adolescence, je développe
+            mes compétences à travers ma formation, mes projets, mes expériences
+            professionnelles et mon apprentissage personnel. Je m’intéresse
+            particulièrement au développement backend, aux systèmes, à la
+            cybersécurité et au cloud, avec pour objectif à long terme de
+            m’orienter vers le MLOps.
+          </p>
+          <p>
+            Vers 13 ans, mes premières formations chez InfoTech Kamgar, en
+            Afghanistan, m’ont familiarisé avec Windows, le matériel, Internet
+            et la bureautique. J’ai ensuite commencé le HTML/CSS et le C++. La
+            période du Covid et un accès limité à Internet ont interrompu cet
+            apprentissage, sans arrêter ma curiosité. Co’ordi, la Piscine de 42
+            puis le BTS m’ont permis de la transformer en pratique.
+          </p>
         </div>
-    </section>
-
-    <!-- ========== SECTION EXPÉRIENCE ========== -->
-    <section id="experience" class="container">
-        <!-- Section pour votre parcours professionnel -->
-        
-        <h2>Expérience & Formation</h2>
-        <!-- Titre de la section -->
-        
-        <p class="section-subtitle">Mon parcours professionnel et académique</p>
-        <!-- Sous-titre descriptif -->
-        
-        <div class="experience-timeline">
-            <!-- Timeline (ligne du temps) pour vos expériences -->
-            
-            <!-- EXPÉRIENCE 1 : BTS SIO -->
-            <div class="experience-item">
-                <!-- Une case d'expérience -->
-                
-                <div class="experience-header">
-                    <!-- En-tête de l'expérience (titre + date) -->
-                    <div>
-                        <div class="experience-title">BTS SIO – Option SLAM</div>
-                        <!-- Titre du poste/formation -->
-                        <div class="experience-company">Lycée Eugène Jamot, Aubusson</div>
-                        <!-- Nom de l'établissement -->
-                    </div>
-                    <div class="experience-period">Depuis septembre 2025</div>
-                    <!-- Période -->
-                </div>
-                
-                <div class="experience-description">
-                    <!-- Description de l'expérience -->
-                    Formation en développement logiciel et applications métiers avec focus sur la programmation, les bases de données et l'architecture logicielle.
-                </div>
+      </section>
+      <section class="parcours-section" id="parcours">
+        <p class="eyebrow">02 / PARCOURS</p>
+        <h2>De la pratique aux projets.</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-content">
+              <div class="identity-mark coordi-brand">
+                <img
+                  alt="Logo Co’ordi"
+                  height="50"
+                  src="images/coordi-logo.png"
+                  width="120"
+                />
+              </div>
+              <span class="status">Terminé</span>
+              <h3>Technicien informatique / Support et maintenance</h3>
+              <p class="meta">6 janvier – 16 août 2025 · CDDI · Guéret</p>
+              <p>
+                Diagnostic, réparation, installation et assistance aux
+                utilisateurs.
+              </p>
+              <div class="project-tags">
+                <span>Windows</span><span>Maintenance</span><span>Support</span>
+              </div>
+              <button
+                aria-controls="coordi-modal"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : Technicien informatique / Support et maintenance"
+                class="stage-link"
+                data-open-layer="coordi-modal"
+                type="button"
+              >
+                En savoir plus →
+              </button>
             </div>
-
-            <!-- EXPÉRIENCE 2 : Co'ordi -->
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <div class="experience-title">Technicien informatique – Diagnostic & Réparation</div>
-                        <div class="experience-company">Co'ordi, Guéret</div>
-                    </div>
-                    <div class="experience-period">Janvier 2025 – Août 2025</div>
-                </div>
-                
-                <div class="experience-description">
-                    <ul>
-                        <!-- Liste à puces pour les tâches -->
-                        <li>Diagnostic matériel et logiciel (PC fixes, portables, téléphones)</li>
-                        <li>Réparation et remplacement de composants (écran, RAM, SSD/HDD)</li>
-                        <li>Installation et préparation systèmes (Linux/Windows), mises à jour, tests</li>
-                        <li>Assemblage et configuration de PC (bureautique / gaming)</li>
-                        <li>Support et résolution d'incidents, procédures et contrôle qualité</li>
-                        <li>Traçabilité des interventions</li>
-                    </ul>
-                </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-content">
+              <div class="identity-mark">
+                <img
+                  alt="Logo 42"
+                  height="50"
+                  src="images/42-logo.png"
+                  width="120"
+                />
+              </div>
+              <span class="status">Terminé</span>
+              <h3>École 42 Angoulême — Piscine</h3>
+              <p class="meta">4 – 29 août 2025 · Processus d’admission</p>
+              <p>
+                Une immersion intensive dans le C, Linux et l’apprentissage
+                entre pairs.
+              </p>
+              <div class="project-tags">
+                <span>C</span><span>Shell</span><span>Git</span>
+              </div>
+              <button
+                aria-controls="ecole42"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : École 42 Angoulême — Piscine"
+                class="stage-link"
+                data-open-layer="ecole42"
+                type="button"
+              >
+                En savoir plus →
+              </button>
             </div>
-
-            <!-- EXPÉRIENCE 3 : École 42 -->
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <div class="experience-title">École 42 (Angoulême) – Piscine</div>
-                        <div class="experience-company">École 42, Angoulême</div>
-                    </div>
-                    <div class="experience-period">Juillet 2024 – Août 2024</div>
-                </div>
-                
-                <div class="experience-description">
-                    Immersion intensive d'un mois : apprentissage intensif du C, algorithmique, gestion de projets, et évaluation par les pairs (peer-review).
-                </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2025–2026</div>
+            <div class="timeline-content">
+              <div aria-hidden="true" class="identity-mark">BTS</div>
+              <span class="status">1re année</span>
+              <h3>BTS SIO — Option SLAM</h3>
+              <p class="meta">Lycée Eugène Jamot · Aubusson</p>
+              <p>
+                Des bases solides en développement, données, réseaux et
+                cybersécurité.
+              </p>
+              <div class="project-tags">
+                <span>C#</span><span>PHP</span><span>SQL</span>
+              </div>
+              <button
+                aria-controls="bts1"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : BTS SIO — 1re année"
+                class="stage-link"
+                data-open-layer="bts1"
+                type="button"
+              >
+                En savoir plus →
+              </button>
             </div>
-
-            <!-- EXPÉRIENCE 4 : FEL -->
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <div class="experience-title">Français Langue Étrangère</div>
-                        <div class="experience-company">FEL, Guéret</div>
-                    </div>
-                    <div class="experience-period">Décembre 2023 – Avril 2024</div>
-                </div>
-                
-                <div class="experience-description">
-                    Obtention des niveaux A1 (décembre 2023 - mars 2024) et A2 (avril 2024).
-                </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2026</div>
+            <div class="timeline-content">
+              <div aria-hidden="true" class="identity-mark">PFMP</div>
+              <span class="status">Stage réalisé</span>
+              <h3>PFMP Manager — Stage 1</h3>
+              <p class="meta">
+                Lycée Professionnel Jean Jaurès · Aubusson · 6 semaines
+              </p>
+              <p>
+                Développement backend, sécurité et déploiement dans un projet en
+                binôme.
+              </p>
+              <div class="project-tags">
+                <span>ASP.NET Core</span><span>MySQL</span><span>Docker</span>
+              </div>
+              <button
+                aria-controls="stage-modal"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : PFMP Manager — Développement backend"
+                class="stage-link"
+                data-open-layer="stage-modal"
+                type="button"
+              >
+                En savoir plus →
+              </button>
             </div>
-
-            <!-- EXPÉRIENCE 5 : Formation initiale -->
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <div class="experience-title">Formation informatique</div>
-                        <div class="experience-company">Lycée anglais d'Esteqlal, Kaboul, Afghanistan</div>
-                    </div>
-                    <div class="experience-period">2017 – 2018</div>
-                </div>
-                
-                <div class="experience-description">
-                    Initiation au développement (HTML/CSS, bases C/C++), matériel/logiciel, Windows, installation/configuration. Découverte de Python, PHP, MySQL, C#.
-                </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2026–2027</div>
+            <div class="timeline-content">
+              <div aria-hidden="true" class="identity-mark">BTS</div>
+              <span class="status">En cours</span>
+              <h3>BTS SIO — 2e année</h3>
+              <p class="meta">Lycée Eugène Jamot · Option SLAM</p>
+              <p>
+                Approfondissement technique et préparation aux épreuves E5/E6.
+              </p>
+              <div class="project-tags">
+                <span>Architecture</span><span>Sécurité</span
+                ><span>Documentation</span>
+              </div>
+              <button
+                aria-controls="bts2"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : BTS SIO — 2e année"
+                class="stage-link"
+                data-open-layer="bts2"
+                type="button"
+              >
+                En savoir plus →
+              </button>
             </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2027</div>
+            <div class="timeline-content">
+              <div aria-hidden="true" class="identity-mark">02</div>
+              <span class="status">À venir</span>
+              <h3>Stage de deuxième année</h3>
+              <p class="meta">Recherche en cours</p>
+              <p>Backend, cybersécurité, cloud ou domaines associés.</p>
+              <div class="project-tags"><span>Stage 2</span></div>
+              <button
+                aria-controls="stage2"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : Stage de deuxième année"
+                class="stage-link"
+                data-open-layer="stage2"
+                type="button"
+              >
+                En savoir plus →
+              </button>
+            </div>
+          </article>
         </div>
-    </section>
-
-    <!-- ========== SECTION COMPÉTENCES ========== -->
-    <section id="skills" class="container">
-        <!-- Section pour vos compétences techniques -->
-        
-        <h2>Compétences</h2>
-        <!-- Titre de la section -->
-        
-        <p class="section-subtitle">Technologies et outils que je maîtrise</p>
-        <!-- Sous-titre -->
-        
-        <div class="skills-grid">
-            <!-- Grille pour organiser les catégories de compétences -->
-            
-            <!-- CATÉGORIE 1 : Langages de programmation -->
-            <div class="skill-category">
-                <h3>💻 Langages de programmation</h3>
-                <!-- Titre de la catégorie avec emoji -->
-                
-                <div class="skill-tags">
-                    <!-- Conteneur pour les badges de compétences -->
-                    <span class="skill-tag">C</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">C# (bases)</span>
-                    <span class="skill-tag">PHP</span>
-                    <span class="skill-tag">HTML/CSS</span>
-                    <!-- Chaque compétence dans un badge -->
-                </div>
-            </div>
-
-            <!-- CATÉGORIE 2 : Bases de données -->
-            <div class="skill-category">
-                <h3>🗄️ Bases de données</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">MySQL</span>
-                </div>
-            </div>
-
-            <!-- CATÉGORIE 3 : Systèmes d'exploitation -->
-            <div class="skill-category">
-                <h3>🖥️ Systèmes d'exploitation</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Linux</span>
-                    <span class="skill-tag">Windows</span>
-                </div>
-            </div>
-
-            <!-- CATÉGORIE 4 : Outils & Technologies -->
-            <div class="skill-category">
-                <h3>🔧 Outils & Technologies</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Nmap</span>
-                    <span class="skill-tag">Hashcat</span>
-                    <span class="skill-tag">ffuf</span>
-                    <span class="skill-tag">HTB Academy</span>
-                </div>
-            </div>
-
-            <!-- CATÉGORIE 5 : Hardware & Maintenance -->
-            <div class="skill-category">
-                <h3>🔩 Hardware & Maintenance</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Diagnostic PC</span>
-                    <span class="skill-tag">Réparation matériel</span>
-                    <span class="skill-tag">Assemblage PC</span>
-                    <span class="skill-tag">Tests & validation</span>
-                </div>
-            </div>
-
-            <!-- CATÉGORIE 6 : Cybersécurité -->
-            <div class="skill-category">
-                <h3>🛡️ Cybersécurité (en cours)</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Tests web (lab)</span>
-                    <span class="skill-tag">Sécurité mots de passe</span>
-                    <span class="skill-tag">Évaluation authentification</span>
-                </div>
-            </div>
+        <div class="future-road">
+          <p class="eyebrow">OBJECTIF PROFESSIONNEL</p>
+          <h3>MLOps Engineer</h3>
+          <p>
+            BTS SIO SLAM → Bac+3 Informatique / Cloud / DevOps → Bac+5 IA / Data
+            / Cloud → MLOps
+          </p>
+          <p>
+            Un projet de poursuite d’études pour relier développement, cloud,
+            DevOps et apprentissage automatique.
+          </p>
         </div>
-
-        <!-- BANNIÈRE RECHERCHE DE STAGE -->
-        <div class="internship-banner">
-            <!-- Zone mise en évidence pour la recherche de stage -->
-            <h3>🎯 Recherche de stage</h3>
-            <p><strong>Stage BTS SIO SLAM – Développement embarqué C</strong></p>
-            <p>6 semaines : 16 mai – 03 juillet 2026</p>
-            <p>Présentiel à Limoges (logement sur place)</p>
-        </div>
-    </section>
-
-    <!-- ========== FOOTER (PIED DE PAGE) ========== -->
-    <footer id="contact">
-        <!-- Section de contact en bas de page -->
-        
-        <div class="container">
-            <div class="footer-content">
-                <h3 style="color: #667eea; margin-bottom: 20px;">Restons en contact</h3>
-                <!-- Titre de la section contact -->
-                
-                <div class="footer-links">
-                    <!-- Liens de contact -->
-                    <a href="mailto:romansalamzada50@gmail.com">📧 romansalamzada50@gmail.com</a>
-                    <!-- Lien email (mailto: ouvre le client email) -->
-                    <a href="tel:+33605858198">📱 06 05 85 81 98</a>
-                    <!-- Lien téléphone (tel: permet d'appeler sur mobile) -->
-                    <a href="#">📍 Aubusson (23200)</a>
-                    <!-- Localisation -->
-                </div>
+      </section>
+      <section class="realisations-section" id="realisations">
+        <p class="eyebrow">03 / RÉALISATIONS</p>
+        <h2>Des projets, des compétences concrètes.</h2>
+        <div class="projects-container">
+          <article class="project-card flagship" id="projet-stage-modal">
+            <div class="project-content">
+              <p class="eyebrow">Projet de stage réalisé · En binôme</p>
+              <h3>PFMP Manager</h3>
+              <p>
+                API, données, sécurité et infrastructure d’une application de
+                suivi des stages. Mon rôle : backend ; Lenny Paul :
+                principalement le frontend Flutter Web.
+              </p>
+              <div class="project-tags">
+                <span>C#</span><span>ASP.NET Core</span><span>MySQL</span
+                ><span>Docker</span>
+              </div>
+              <button
+                aria-controls="stage-modal"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : PFMP Manager — Développement backend"
+                class="stage-link"
+                data-open-layer="stage-modal"
+                type="button"
+              >
+                En savoir plus →
+              </button>
             </div>
-            
-            <p style="color: #666;">&copy; 2026 Roman SALAMZADA. Tous droits réservés.</p>
-            <!-- Copyright (© est le symbole copyright) -->
+          </article>
+          <article class="project-card" id="projet-gsb">
+            <div class="project-content">
+              <p class="eyebrow">Projet en cours d’amélioration · Individuel</p>
+              <h3>ApplicationFrais / GSB</h3>
+              <p>
+                Application PHP MVC de gestion des frais, développée à partir du
+                cahier des charges fourni par le professeur. Module visiteur
+                avancé ; comptabilité en construction.
+              </p>
+              <div class="project-tags">
+                <span>PHP</span><span>MVC</span><span>PDO</span
+                ><span>MariaDB</span>
+              </div>
+              <button
+                aria-controls="gsb"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : ApplicationFrais / GSB"
+                class="stage-link"
+                data-open-layer="gsb"
+                type="button"
+              >
+                En savoir plus →
+              </button>
+            </div>
+          </article>
+          <article class="project-card" id="projet-tonton">
+            <div class="project-content">
+              <p class="eyebrow">Projet terminé · Individuel</p>
+              <h3>Tonton Primeur</h3>
+              <p>
+                Gestion des articles et fournisseurs dans une application
+                Windows Forms : CRUD, tri, validations et base relationnelle.
+              </p>
+              <div class="project-tags">
+                <span>C#</span><span>WinForms</span><span>ADO.NET</span
+                ><span>SQL</span>
+              </div>
+              <button
+                aria-controls="tonton"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : Tonton Primeur"
+                class="stage-link"
+                data-open-layer="tonton"
+                type="button"
+              >
+                En savoir plus →
+              </button>
+            </div>
+          </article>
+          <article class="project-card" id="projet-aux">
+            <div class="project-content">
+              <p class="eyebrow">Projet BTS</p>
+              <h3>Aux Claviers Citoyens API</h3>
+              <p>
+                Client Python pour une API REST de tournoi e-sport militaire
+                français. Authentification, ressources et menu en ligne de
+                commande.
+              </p>
+              <div class="project-tags">
+                <span>Python</span><span>REST</span><span>JWT</span
+                ><span>requests</span>
+              </div>
+              <button
+                aria-controls="aux"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : Aux Claviers Citoyens API"
+                class="stage-link"
+                data-open-layer="aux"
+                type="button"
+              >
+                En savoir plus →
+              </button>
+            </div>
+          </article>
+          <article class="project-card" id="projet-poker">
+            <div class="project-content">
+              <p class="eyebrow">Projet pédagogique</p>
+              <h3>Poker</h3>
+              <p>
+                Jeu console C# : déroulement des parties, évaluation des mains
+                et persistance des scores.
+              </p>
+              <div class="project-tags">
+                <span>C#</span><span>.NET Framework</span>
+              </div>
+              <button
+                aria-controls="poker"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : Poker — Console C#"
+                class="stage-link"
+                data-open-layer="poker"
+                type="button"
+              >
+                En savoir plus →
+              </button>
+            </div>
+          </article>
+          <article class="project-card" id="projet-tp">
+            <div class="project-content">
+              <p class="eyebrow">Progression en BTS</p>
+              <h3>Interfaces et formulaires</h3>
+              <p>
+                Des premiers formulaires aux applications MDI, en C# Windows
+                Forms et Python.
+              </p>
+              <div class="project-tags">
+                <span>WinForms</span><span>Tkinter</span><span>PyQt5</span>
+              </div>
+              <button
+                aria-controls="tp"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : Progression — Interfaces graphiques"
+                class="stage-link"
+                data-open-layer="tp"
+                type="button"
+              >
+                En savoir plus →
+              </button>
+            </div>
+          </article>
+          <article class="project-card" id="projet-ai">
+            <div class="project-content">
+              <p class="eyebrow">Projet personnel</p>
+              <h3>Agent IA local</h3>
+              <p>
+                Expérimentations d’un LLM local et d’un agent connecté à
+                WhatsApp : configuration, règles d’outils et dépannage.
+              </p>
+              <div class="project-tags">
+                <span>Ollama</span><span>OpenClaw</span><span>WhatsApp</span>
+              </div>
+              <button
+                aria-controls="ai"
+                aria-haspopup="dialog"
+                aria-label="En savoir plus → : Agent IA local — Ollama / OpenClaw / WhatsApp"
+                class="stage-link"
+                data-open-layer="ai"
+                type="button"
+              >
+                En savoir plus →
+              </button>
+            </div>
+          </article>
         </div>
+      </section>
+      <section class="stages-section" id="stages">
+        <p class="eyebrow">04 / EXPÉRIENCES</p>
+        <h2>Stages &amp; expériences</h2>
+        <div class="stages-container">
+          <article class="stage-card">
+            <div class="stage-content">
+              <span class="status status-done">2026 · 1re année</span>
+              <h3>PFMP Manager — Développement backend</h3>
+              <p class="stage-company">
+                Lycée Professionnel Jean Jaurès — Aubusson
+              </p>
+              <p>
+                Développement du backend d’une application de gestion des PFMP
+                pour les élèves, les enseignants et les administrateurs : API
+                REST, données MySQL, sécurité et règles métier.
+              </p>
+              <h4>Mes activités</h4>
+              <ul class="stage-missions">
+                <li>Développement de l’API REST ASP.NET Core</li>
+                <li>Gestion des PFMP, journaux, présences et organisations</li>
+                <li>Authentification et contrôle des autorisations</li>
+                <li>Communication avec MySQL via Entity Framework Core</li>
+                <li>Intégration backend ↔ frontend Flutter</li>
+                <li>Dockerisation, Nginx et déploiement</li>
+              </ul>
+              <p class="stage-team">
+                Roman : backend ASP.NET Core, EF Core / MySQL, sécurité et
+                initiatives Docker, Nginx et déploiement.<br />Lenny Paul :
+                principalement le frontend Flutter Web.
+              </p>
+              <button
+                aria-controls="stage-modal"
+                aria-haspopup="dialog"
+                class="stage-link open-stage-modal"
+                type="button"
+              >
+                En savoir plus →
+              </button>
+            </div>
+            <div class="stage-overview">
+              <figure class="stage-school">
+                <img
+                  alt="Bâtiments et cour du Lycée Professionnel Jean Jaurès à Aubusson"
+                  height="667"
+                  loading="lazy"
+                  src="images/stage-1/lycee-jean-jaures-aubusson.jpg"
+                  width="1000"
+                />
+                <figcaption>
+                  Lieu du stage ·
+                  <a
+                    href="https://www.cite-scolaire-aubusson.fr/presentation-du-lycee-professionnel/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Photo : Cité scolaire Aubusson</a
+                  >
+                </figcaption>
+              </figure>
+              <h4>Technologies du projet</h4>
+              <div class="technology-tiles">
+                <div class="technology-tile">
+                  <img
+                    alt=""
+                    height="36"
+                    loading="lazy"
+                    src="images/technologies/csharp.svg"
+                    width="36"
+                  /><span>C#</span>
+                </div>
+                <div class="technology-tile">
+                  <img
+                    alt=""
+                    height="36"
+                    loading="lazy"
+                    src="images/technologies/dotnet.svg"
+                    width="36"
+                  /><span>ASP.NET Core</span>
+                </div>
+                <div class="technology-tile">
+                  <img
+                    alt=""
+                    height="36"
+                    loading="lazy"
+                    src="images/technologies/dotnet.svg"
+                    width="36"
+                  /><span>Entity Framework Core</span>
+                </div>
+                <div class="technology-tile">
+                  <img
+                    alt=""
+                    height="36"
+                    loading="lazy"
+                    src="images/technologies/mysql.svg"
+                    width="36"
+                  /><span>MySQL</span>
+                </div>
+                <div class="technology-tile">
+                  <img
+                    alt=""
+                    height="36"
+                    loading="lazy"
+                    src="images/technologies/docker.svg"
+                    width="36"
+                  /><span>Docker / Compose</span>
+                </div>
+                <div class="technology-tile">
+                  <img
+                    alt=""
+                    height="36"
+                    loading="lazy"
+                    src="images/technologies/nginx.svg"
+                    width="36"
+                  /><span>Nginx</span>
+                </div>
+                <div class="technology-tile">
+                  <img
+                    alt=""
+                    height="36"
+                    loading="lazy"
+                    src="images/technologies/github.svg"
+                    width="36"
+                  /><span>Git / GitHub</span>
+                </div>
+                <div class="technology-tile">
+                  <img
+                    alt=""
+                    height="36"
+                    loading="lazy"
+                    src="images/technologies/flutter.svg"
+                    width="36"
+                  /><span>Flutter Web · intégration</span>
+                </div>
+              </div>
+              <dl class="stage-stats">
+                <div>
+                  <dt>18</dt>
+                  <dd>tâches confiées</dd>
+                </div>
+                <div>
+                  <dt>API</dt>
+                  <dd>développement backend</dd>
+                </div>
+                <div>
+                  <dt>2026</dt>
+                  <dd>1re année</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+        <div class="experience-footer">
+          <p>
+            <strong>Co’ordi · 2025</strong> — Du savoir théorique à la pratique
+            professionnelle : maintenance et support.
+          </p>
+          <button
+            aria-controls="coordi-modal"
+            aria-haspopup="dialog"
+            aria-label="En savoir plus → : Technicien informatique / Support et maintenance"
+            class="stage-link"
+            data-open-layer="coordi-modal"
+            type="button"
+          >
+            En savoir plus →
+          </button>
+          <p><strong>Stage 2 · 2027</strong> — Recherche en cours.</p>
+          <a href="#contact">Me contacter →</a>
+        </div>
+      </section>
+      <section class="competences-section" id="competences">
+        <p class="eyebrow">05 / COMPÉTENCES</p>
+        <h2>La technique, avec ses preuves.</h2>
+        <div class="competences-container">
+          <article class="competence-card">
+            <h3>Développement</h3>
+            <p>C#, Python, PHP, C, HTML/CSS et JavaScript.</p>
+            <p class="proof">PFMP, Tonton, GSB, Aux Claviers, 42 et TPs.</p>
+            <button
+              aria-controls="tonton"
+              aria-haspopup="dialog"
+              aria-label="Voir une réalisation → : Tonton Primeur"
+              class="stage-link"
+              data-open-layer="tonton"
+              type="button"
+            >
+              Voir une réalisation →
+            </button>
+          </article>
+          <article class="competence-card">
+            <h3>Backend &amp; API</h3>
+            <p>
+              ASP.NET Core, REST/JSON, EF Core, JWT, rôles et autorisations,
+              ADO.NET et PDO.
+            </p>
+            <p class="proof">PFMP, Tonton et ApplicationFrais.</p>
+            <button
+              aria-controls="stage-modal"
+              aria-haspopup="dialog"
+              aria-label="Voir une réalisation → : PFMP Manager — Développement backend"
+              class="stage-link"
+              data-open-layer="stage-modal"
+              type="button"
+            >
+              Voir une réalisation →
+            </button>
+          </article>
+          <article class="competence-card">
+            <h3>Bases de données</h3>
+            <p>
+              MySQL, MariaDB, SQL, modélisation relationnelle, CRUD et requêtes
+              paramétrées.
+            </p>
+            <p class="proof">PFMP, Tonton et ApplicationFrais.</p>
+            <button
+              aria-controls="gsb"
+              aria-haspopup="dialog"
+              aria-label="Voir une réalisation → : ApplicationFrais / GSB"
+              class="stage-link"
+              data-open-layer="gsb"
+              type="button"
+            >
+              Voir une réalisation →
+            </button>
+          </article>
+          <article class="competence-card">
+            <h3>Systèmes &amp; réseaux</h3>
+            <p>
+              Linux, DNS Bind9, VLAN, NAT, pare-feu, redirection de ports,
+              iptables et Wireshark.
+            </p>
+            <p class="proof">
+              Travaux BTS et environnement de test PFMP ; éléments décrits dans
+              mon CV.
+            </p>
+            <button
+              aria-controls="bts1"
+              aria-haspopup="dialog"
+              aria-label="Voir une réalisation → : BTS SIO — 1re année"
+              class="stage-link"
+              data-open-layer="bts1"
+              type="button"
+            >
+              Voir une réalisation →
+            </button>
+          </article>
+          <article class="competence-card">
+            <h3>Cybersécurité</h3>
+            <p>
+              Linux, Nmap, ffuf et sécurité des applications. Hashcat et SQLMap
+              en apprentissage.
+            </p>
+            <p class="proof">Modules HTB et authentification PFMP.</p>
+            <button
+              aria-controls="htb"
+              aria-haspopup="dialog"
+              aria-label="Voir une réalisation → : Hack The Box Academy"
+              class="stage-link"
+              data-open-layer="htb"
+              type="button"
+            >
+              Voir une réalisation →
+            </button>
+          </article>
+          <article class="competence-card">
+            <h3>DevOps &amp; outils</h3>
+            <p>
+              Docker/Compose, Nginx, reverse proxy, volumes, variables
+              d’environnement, sauvegarde/restauration MySQL. Git/GitHub, Visual
+              Studio, VS Code, XAMPP et Laragon.
+            </p>
+            <p class="proof">
+              Infrastructure PFMP et environnement des projets.
+            </p>
+            <button
+              aria-controls="stage-modal"
+              aria-haspopup="dialog"
+              aria-label="Voir une réalisation → : PFMP Manager — Développement backend"
+              class="stage-link"
+              data-open-layer="stage-modal"
+              type="button"
+            >
+              Voir une réalisation →
+            </button>
+          </article>
+        </div>
+        <details class="mapping">
+          <summary>Repères BTS — Compétences mobilisées / E5–E6</summary>
+          <p>
+            Correspondances proposées à partir des réalisations et du
+            référentiel RNCP40792. Elles ne constituent pas une validation des
+            compétences ni un tableau de synthèse définitif.
+          </p>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Réalisation</th>
+                  <th>Compétence mobilisée</th>
+                  <th>Éléments / limites</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>PFMP</th>
+                  <td>
+                    Gérer le patrimoine informatique ; travailler en mode projet
+                    ; mettre à disposition des utilisateurs un service
+                    informatique
+                  </td>
+                  <td>
+                    Habilitations, sauvegardes, binôme et déploiement de test.
+                    Compléter les traces de planification et de recette.
+                  </td>
+                </tr>
+                <tr>
+                  <th>ApplicationFrais</th>
+                  <td>
+                    Concevoir et développer une solution applicative ; gérer les
+                    données
+                  </td>
+                  <td>
+                    MVC, PDO et base relationnelle. Module comptable incomplet ;
+                    maintenance à documenter.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Tonton Primeur</th>
+                  <td>
+                    Concevoir et développer une solution applicative ; gérer les
+                    données
+                  </td>
+                  <td>WinForms, ADO.NET, CRUD et intégrité référentielle.</td>
+                </tr>
+                <tr>
+                  <th>Aux Claviers</th>
+                  <td>Concevoir et développer une solution applicative</td>
+                  <td>Client REST Python et composants réutilisables.</td>
+                </tr>
+                <tr>
+                  <th>Co’ordi</th>
+                  <td>
+                    Répondre aux incidents et aux demandes d’assistance et
+                    d’évolution
+                  </td>
+                  <td>
+                    Diagnostic, dépannage, préparation et assistance.
+                    Attestation attendue.
+                  </td>
+                </tr>
+                <tr>
+                  <th>42 / HTB</th>
+                  <td>Organiser son développement professionnel</td>
+                  <td>
+                    Apprentissage autonome, exercices et modules. Traces à
+                    conserver.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            La présence en ligne d’une organisation n’est pas considérée comme
+            acquise par la seule existence de ce portfolio. Les compétences de
+            cybersécurité doivent rester proportionnées aux preuves disponibles.
+          </p>
+          <p>
+            <a href="https://www.francecompetences.fr/recherche/rncp/40792/"
+              >Référentiel officiel — France Compétences ↗</a
+            >
+          </p>
+          <p>
+            À confronter aux consignes de la session 2027 et à valider avec
+            l’équipe pédagogique.
+          </p>
+          <a
+            href="https://siec.education.fr/candidats/docutheque/examens/BTS/bts-services-informatiques-aux-organisations-sio-session-2026"
+            >Documents officiels SIEC — Session 2026 ↗</a
+          >
+          <p>
+            E5 : support et mise à disposition de services informatiques. E6
+            SLAM : conception et développement d’applications. Les projets PHP,
+            C# et Python documentent surtout les compétences de développement ;
+            leur présence au portfolio ne suffit pas à valider l’ensemble du
+            bloc E5.
+          </p>
+        </details>
+      </section>
+      <section class="certifications-section" id="certifications">
+        <p class="eyebrow">06 / FORMATIONS</p>
+        <h2>Certifications &amp; formations complémentaires</h2>
+        <div class="cert-grid">
+          <article class="competence-card">
+            <p class="eyebrow">CISCO NETWORKING ACADEMY</p>
+            <h3>C Essentials 1</h3>
+            <p>
+              Formation terminée le 2 septembre 2026, proposée par le BTS SIO
+              lycée J. Jaurès, Aubusson. Enseignant : Roumaneix Doryan.
+            </p>
+            <a download="" href="certificates/c-essentials-1-public.pdf"
+              >Consulter l’attestation ↗</a
+            >
+          </article>
+          <article class="competence-card">
+            <p class="eyebrow">APPRENTISSAGE CONTINU</p>
+            <h3>Hack The Box Academy</h3>
+            <p>
+              Roman Salamzada · @D4rkne33<br />Niveau 21 · Rang Apprentice<br />État
+              communiqué en septembre 2026.
+            </p>
+            <button
+              aria-controls="htb"
+              aria-haspopup="dialog"
+              aria-label="Modules et apprentissages → : Hack The Box Academy"
+              class="stage-link"
+              data-open-layer="htb"
+              type="button"
+            >
+              Modules et apprentissages →
+            </button>
+          </article>
+          <article class="competence-card">
+            <h3>InfoTech Kamgar</h3>
+            <p>
+              Formations en informatique et en anglais : Windows, matériel,
+              Internet, Word, Excel et PowerPoint.
+            </p>
+            <p>
+              Les documents de formation de cet institut ne sont pas présentés
+              comme une certification officielle Microsoft.
+            </p>
+          </article>
+          <article class="competence-card">
+            <h3>École 42 Angoulême</h3>
+            <p>
+              Participation au processus d’admission — Piscine, du 4 au 29 août
+              2025.
+            </p>
+            <button
+              aria-controls="ecole42"
+              aria-haspopup="dialog"
+              aria-label="En savoir plus → : École 42 Angoulême — Piscine"
+              class="stage-link"
+              data-open-layer="ecole42"
+              type="button"
+            >
+              En savoir plus →
+            </button>
+          </article>
+        </div>
+        <div class="cyber-note">
+          <p class="eyebrow">EN DEHORS DU BTS</p>
+          <h3>Holmes CTF 2026 — En préparation</h3>
+          <p>
+            Hack The Box · 17–21 septembre 2026 · Blue Team et investigation.
+          </p>
+          <p>
+            Préparation : SIEM, journaux et Windows Event Logs, threat hunting,
+            réponse à incident, forensics, PCAP, Linux, notions d’analyse de
+            malwares et corrélation d’événements.
+          </p>
+        </div>
+      </section>
+      <section class="veille-section" id="veille">
+        <p class="eyebrow">07 / VEILLE TECHNOLOGIQUE</p>
+        <h2>MLOps : de l’expérimentation au déploiement.</h2>
+        <p class="veille-intro">
+          L’industrialisation, le déploiement et le suivi des modèles
+          d’intelligence artificielle.
+        </p>
+        <div class="veille-question">
+          <h3>
+            Comment les entreprises industrialisent-elles et déploient-elles des
+            modèles d’IA ?
+          </h3>
+          <p>
+            Un fil conducteur entre mon expérience backend, les conteneurs et
+            mon objectif professionnel.
+          </p>
+        </div>
+        <div class="cert-grid">
+          <article class="competence-card">
+            <h3>Sources sélectionnées</h3>
+            <p>
+              <a href="https://mlflow.org/docs/latest/ml/tracking/"
+                >Documentation MLflow — suivi des expériences</a
+              >
+            </p>
+            <p>
+              <a href="https://kubernetes.io/docs/home/"
+                >Documentation Kubernetes — orchestration</a
+              >
+            </p>
+            <p>
+              <a href="https://www.cnil.fr/fr/intelligence-artificielle"
+                >CNIL — IA et données personnelles</a
+              >
+            </p>
+          </article>
+          <article class="competence-card">
+            <h3>Méthode à mettre en place</h3>
+            <p>
+              Centraliser les sources et flux RSS disponibles, consulter les
+              nouveautés chaque semaine, sélectionner les changements utiles,
+              puis conserver une fiche datée : source, évolution, intérêt,
+              apprentissage et expérimentation possible.
+            </p>
+            <p>Les abonnements et alertes ne sont pas encore documentés.</p>
+          </article>
+        </div>
+        <details class="mapping">
+          <summary>
+            7 septembre 2026 — Fiche initiale : suivi des expériences avec
+            MLflow
+          </summary>
+          <p>
+            <strong>Statut :</strong> source vérifiée lors de la préparation du
+            portfolio ; lecture personnelle et expérimentation à compléter.
+          </p>
+          <p>
+            <strong>Source :</strong>
+            <a href="https://mlflow.org/docs/latest/ml/tracking/"
+              >MLflow — ML Experiment Tracking</a
+            >
+            (consultation du 7 septembre 2026).
+          </p>
+          <p>
+            <strong>Point observé :</strong> le suivi regroupe paramètres,
+            métriques et artefacts des expériences. Cette fiche est un point de
+            départ, pas l’annonce d’une nouvelle version.
+          </p>
+          <p>
+            <strong>Intérêt :</strong> comparer les essais et retrouver les
+            éléments associés à un modèle.
+          </p>
+          <p>
+            <strong>Prochaine étape :</strong> réaliser deux essais, comparer
+            leurs métriques et rédiger mon retour d’expérience. Aucun essai
+            n’est revendiqué ici comme déjà réalisé.
+          </p>
+        </details>
+        <p class="proof">
+          Synthèse initiale : déployer un modèle implique aussi de suivre ses
+          expériences et son cycle de vie. Le journal sera enrichi de lectures
+          et d’essais personnels datés.
+        </p>
+      </section>
+      <section class="contact-section" id="contact">
+        <p class="eyebrow">08 / CONTACT</p>
+        <h2>Échangeons sur votre prochain projet.</h2>
+        <p>
+          À la recherche d’un stage de deuxième année en backend, cybersécurité
+          ou cloud.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:romansalamzada50@gmail.com"
+            >romansalamzada50@gmail.com ↗</a
+          ><a href="https://linkedin.com/in/roman-salamzada-it">LinkedIn ↗</a
+          ><a href="https://github.com/HajiKing-ops">GitHub ↗</a
+          ><a download="" href="cv/roman-salamzada-public.pdf"
+            >Télécharger mon CV ↓</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2026 Roman Salamzada · BTS SIO SLAM</p>
+        <a href="#accueil">Retour en haut ↑</a>
+      </div>
     </footer>
-
-    <!-- ========== LIEN VERS LE JAVASCRIPT ========== -->
-    <script src="script.js"></script>
-    <!-- Lien vers le fichier JavaScript externe pour l'interactivité -->
-    
-</body>
+    <div
+      aria-labelledby="coordi-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="coordi-modal"
+      role="dialog"
+    >
+      <div class="modal-content" tabindex="-1">
+        <header class="coordi-hero">
+          <img
+            alt="L’équipe Co’ordi réunie dans le magasin à Guéret"
+            height="1365"
+            src="images/coordi/equipe-coordi.jpg"
+            width="2048"
+          />
+          <button
+            aria-label="Fermer les détails de Co’ordi"
+            class="modal-close coordi-hero-close"
+            type="button"
+          >
+            ✕
+          </button>
+          <div class="coordi-hero-title">
+            <p>Co’ordi</p>
+            <h2 id="coordi-title">
+              Technicien informatique / Support et maintenance
+            </h2>
+          </div>
+        </header>
+        <div class="coordi-modal-body">
+          <p class="modal-stage-meta">
+            Guéret (23000) · CDDI · 6 janvier 2025 – 16 août 2025
+          </p>
+          <section class="modal-section">
+            <h3>Présentation</h3>
+            <p>
+              J’ai travaillé chez Co’ordi dans le cadre d’un CDDI. J’y ai
+              développé une expérience concrète en maintenance informatique,
+              réparation de matériel, préparation d’ordinateurs et de
+              smartphones, installation de systèmes et logiciels, ainsi qu’en
+              assistance aux clients en magasin et à domicile.
+            </p>
+            <p>
+              Avant Co’ordi, je possédais déjà des connaissances théoriques en
+              informatique et en maintenance ; cette expérience m’a permis de
+              les mettre en pratique sur des situations réelles et d’acquérir
+              une véritable expérience professionnelle.
+            </p>
+            <p class="coordi-role-note">
+              Le rôle présenté résume mes activités ; il ne constitue pas un
+              intitulé contractuel confirmé.
+            </p>
+          </section>
+          <section class="modal-section">
+            <h3>Activités réalisées</h3>
+            <div class="skills-groups">
+              <article>
+                <h4>Assistance et interventions</h4>
+                <ul>
+                  <li>Accueil et assistance aux clients en magasin.</li>
+                  <li>
+                    Aide à la récupération d’accès aux comptes et appareils avec
+                    l’autorisation du client.
+                  </li>
+                  <li>
+                    Interventions informatiques à domicile et sur site pour
+                    diagnostiquer et résoudre les problèmes.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4>Ordinateurs et matériel</h4>
+                <ul>
+                  <li>Diagnostic et réparation de PC fixes et portables.</li>
+                  <li>
+                    Remplacement de batteries, claviers, écrans, périphériques,
+                    microphones et autres composants.
+                  </li>
+                  <li>
+                    Assemblage et configuration de PC de bureau, notamment des
+                    configurations gaming.
+                  </li>
+                  <li>
+                    Installation de Windows et de logiciels, préparation et
+                    tests avant la vente.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4>Smartphones et contrôles</h4>
+                <ul>
+                  <li>
+                    Diagnostic et réparation de smartphones Android et iPhone.
+                  </li>
+                  <li>
+                    Remplacement de composants et mises à jour logicielles.
+                  </li>
+                  <li>
+                    Préparation avant revente et contrôles fonctionnels finaux
+                    des appareils.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+          <section class="modal-section">
+            <h3>Compétences développées</h3>
+            <div class="skills-groups">
+              <article>
+                <h4>Maintenance informatique</h4>
+                <p>
+                  Diagnostic matériel et logiciel · maintenance et réparation de
+                  PC · assemblage et configuration · installation et
+                  configuration de Windows · dépannage
+                </p>
+              </article>
+              <article>
+                <h4>Appareils et qualité</h4>
+                <p>
+                  Maintenance et réparation de smartphones · préparation des
+                  appareils · tests et contrôles qualité
+                </p>
+              </article>
+              <article>
+                <h4>Relation et méthode</h4>
+                <p>
+                  Support et communication avec les clients · autonomie ·
+                  intervention sur site · travail en équipe
+                </p>
+              </article>
+            </div>
+          </section>
+          <section class="modal-section">
+            <h3>Outils / environnements</h3>
+            <div class="modal-tags">
+              <span>Windows</span><span>LibreOffice</span
+              ><span>PC fixes et portables</span><span>Android</span
+              ><span>iPhone</span>
+            </div>
+          </section>
+          <section class="modal-section">
+            <h3>Ressources / Preuves</h3>
+            <p>
+              Photos de l’environnement de travail, de l’équipe et
+              d’interventions réalisées pendant cette expérience.
+            </p>
+            <div class="modal-resources">
+              <button
+                aria-controls="coordi-gallery"
+                aria-haspopup="dialog"
+                aria-label="📷 Voir les photos (6) : Photos de mon expérience chez Co’ordi"
+                data-open-layer="coordi-gallery"
+                type="button"
+              >
+                📷 Voir les photos (6)
+              </button>
+            </div>
+            <p id="coordi-certificate-status">
+              Attestation Co’ordi en attente de réception.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby="coordi-gallery-title"
+      aria-modal="true"
+      class="photo-gallery-modal"
+      hidden=""
+      id="coordi-gallery"
+      role="dialog"
+    >
+      <div class="photo-gallery-content" tabindex="-1">
+        <div class="dialog-toolbar">
+          <button
+            aria-label="Fermer la galerie Co’ordi"
+            class="gallery-close"
+            type="button"
+          >
+            ✕
+          </button>
+        </div>
+        <h2 id="coordi-gallery-title">Photos de mon expérience chez Co’ordi</h2>
+        <p>Guéret · 2025 — sélectionnez une photo pour l’agrandir.</p>
+        <div class="modal-gallery coordi-gallery-grid">
+          <figure>
+            <button
+              aria-label="Agrandir : Environnement de travail chez Co’ordi"
+              class="gallery-thumbnail"
+              type="button"
+            >
+              <img
+                alt="Environnement de travail chez Co’ordi"
+                loading="lazy"
+                src="images/coordi/espace-coordi.jpg"
+              />
+            </button>
+            <figcaption>Environnement de travail chez Co’ordi</figcaption>
+          </figure>
+          <figure>
+            <button
+              aria-label="Agrandir : Équipe Co’ordi — Guéret, 2025"
+              class="gallery-thumbnail"
+              type="button"
+            >
+              <img
+                alt="Équipe Co’ordi — Guéret, 2025"
+                loading="lazy"
+                src="images/coordi/equipe-coordi.jpg"
+              />
+            </button>
+            <figcaption>Équipe Co’ordi — Guéret, 2025</figcaption>
+          </figure>
+          <figure>
+            <button
+              aria-label="Agrandir : Maintenance d’un PC de bureau avec carte graphique"
+              class="gallery-thumbnail"
+              type="button"
+            >
+              <img
+                alt="Maintenance d’un PC de bureau avec carte graphique"
+                loading="lazy"
+                src="images/coordi/maintenance-pc.jpg"
+              />
+            </button>
+            <figcaption>
+              Maintenance d’un PC de bureau avec carte graphique
+            </figcaption>
+          </figure>
+          <figure>
+            <button
+              aria-label="Agrandir : Intervention sur un mini-PC ouvert"
+              class="gallery-thumbnail"
+              type="button"
+            >
+              <img
+                alt="Intervention sur un mini-PC ouvert"
+                loading="lazy"
+                src="images/coordi/maintenance-mini-pc.jpg"
+              />
+            </button>
+            <figcaption>Intervention sur un mini-PC ouvert</figcaption>
+          </figure>
+          <figure>
+            <button
+              aria-label="Agrandir : Préparation logicielle — LibreOffice sous Windows"
+              class="gallery-thumbnail"
+              type="button"
+            >
+              <img
+                alt="Préparation logicielle — LibreOffice sous Windows"
+                loading="lazy"
+                src="images/coordi/preparation-logiciels.jpg"
+              />
+            </button>
+            <figcaption>
+              Préparation logicielle — LibreOffice sous Windows
+            </figcaption>
+          </figure>
+          <figure>
+            <button
+              aria-label="Agrandir : Diagnostic d’un problème de démarrage Windows"
+              class="gallery-thumbnail"
+              type="button"
+            >
+              <img
+                alt="Diagnostic d’un problème de démarrage Windows"
+                loading="lazy"
+                src="images/coordi/diagnostic-windows.jpg"
+              />
+            </button>
+            <figcaption>
+              Diagnostic d’un problème de démarrage Windows
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby="stage-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="stage-modal"
+      role="dialog"
+    >
+      <div class="modal-content" tabindex="-1">
+        <div class="dialog-toolbar">
+          <button
+            aria-label="Fermer les détails du stage"
+            class="modal-close"
+            type="button"
+          >
+            ✕
+          </button>
+        </div>
+        <h2 id="stage-title">PFMP Manager — Développement backend</h2>
+        <p class="modal-stage-meta">2026 · 1re année · 6 semaines</p>
+        <section class="modal-section">
+          <h3>Présentation</h3>
+          <p><strong>Lycée Professionnel Jean Jaurès — Aubusson</strong></p>
+          <p>
+            PFMP Manager centralise les stages, les journaux quotidiens, les
+            présences et la messagerie des élèves, enseignants et
+            administrateurs.
+          </p>
+          <p>
+            <strong>Roman :</strong> développement backend, API REST ASP.NET
+            Core, MySQL / EF Core, sécurité, règles métier et initiatives
+            Docker, Nginx et déploiement.
+            <strong>Lenny Paul :</strong> principalement l’interface Flutter
+            Web. Je n’ai pas développé l’interface Flutter ; j’ai assuré son
+            intégration avec le backend. L’espace enseignant dédié n’est pas
+            encore raccordé au frontend.
+          </p>
+        </section>
+        <section class="modal-section">
+          <span class="contribution-label">Mission confiée</span>
+          <h3>Missions confiées par le professeur</h3>
+          <p>
+            18 tâches issues des post-its d’origine. Plusieurs post-its
+            partageaient la même référence : les doublons A2.1, A2.5 et A2.6
+            sont conservés volontairement.
+          </p>
+          <details class="mission-group">
+            <summary>A1 · Initialisation, données et premiers services</summary>
+            <ul>
+              <li>
+                A1.2 — Injecter un jeu de données SQL de test avec 2
+                professeurs, 1 classe, 3 élèves, 3 entreprises et un exemple de
+                stage.
+              </li>
+              <li>
+                A1.3 — Initialiser le projet ASP.NET Core Web API, configurer
+                Entity Framework / DbContext et CORS.
+              </li>
+              <li>
+                A1.4 — Créer les entités et DTOs C# et définir le format JSON
+                échangé avec le frontend.
+              </li>
+              <li>
+                A1.5 — Créer POST /api/login pour vérifier les identifiants et
+                retourner l'utilisateur avec son rôle.
+              </li>
+              <li>
+                A1.6 — Créer GET /api/news pour récupérer un flux RSS avec
+                HttpClient, parser le XML et retourner du JSON.
+              </li>
+            </ul>
+          </details>
+          <details class="mission-group">
+            <summary>A2 · Suivi des PFMP et journal</summary>
+            <ul>
+              <li>
+                A2.1 — Créer GET /api/dashboard pour récupérer la PFMP active et
+                calculer le nombre de jours restants.
+              </li>
+              <li>
+                A2.1 — Créer POST /api/pfmp pour enregistrer une PFMP avec ses
+                dates, son entreprise et l'élève concerné.
+              </li>
+              <li>
+                A2.2 — Calculer avec LINQ les heures effectuées et les jours de
+                stage renseignés.
+              </li>
+              <li>
+                A2.3 — Créer GET /api/journal et POST /api/journal pour
+                consulter et enregistrer les rapports quotidiens.
+              </li>
+              <li>
+                A2.4 — Vérifier si l'élève a déjà rempli son journal pour la
+                journée.
+              </li>
+              <li>
+                A2.5 — Créer GET /api/entreprises avec recherche par nom,
+                secteur ou code postal.
+              </li>
+              <li>
+                A2.5 — Créer POST /api/demarches pour enregistrer un refus
+                d'entreprise.
+              </li>
+              <li>
+                A2.6 — Créer les routes POST/DELETE permettant de gérer
+                l'historique des démarches/refus.
+              </li>
+              <li>
+                A2.6 — Créer GET /api/journal/export pour fournir les données du
+                journal triées et structurées en JSON.
+              </li>
+            </ul>
+          </details>
+          <details class="mission-group">
+            <summary>A3 · Messagerie et administration</summary>
+            <ul>
+              <li>
+                A3.1 — Créer GET /api/messages et POST /api/messages pour la
+                messagerie liée à une PFMP.
+              </li>
+              <li>
+                A3.3 — Créer GET /api/admin/classes et GET /api/admin/élèves.
+              </li>
+              <li>
+                A3.4 — Calculer avec LINQ le total des absences et le taux de
+                présence.
+              </li>
+              <li>
+                A3.5 — Créer POST /api/admin/valider-présence pour modifier le
+                statut de validation de la PFMP.
+              </li>
+            </ul>
+          </details>
+        </section>
+        <section class="modal-section">
+          <span class="contribution-label">Réalisation</span>
+          <h3>Ce que j’ai réalisé</h3>
+          <p>
+            J’ai développé le backend en C# avec ASP.NET Core Web API et Entity
+            Framework Core : contrôleurs et endpoints pour l’authentification,
+            les PFMP, les organisations, le journal quotidien, les présences, la
+            messagerie et l’administration.
+          </p>
+          <p>
+            J’ai relié l’API à MySQL et préparé les échanges JSON nécessaires à
+            l’intégration du frontend Flutter Web réalisé principalement par
+            Lenny Paul.
+          </p>
+          <p class="endpoint-families">
+            /api/login · /api/pfmp · /api/dashboard · /api/journal ·
+            /api/entreprises · /api/demarches · /api/messages · /api/admin/...
+          </p>
+        </section>
+        <section class="modal-section personal-initiatives">
+          <span class="contribution-label">Initiative personnelle</span>
+          <h3>Au-delà des missions / Initiatives personnelles</h3>
+          <p>
+            J’ai approfondi la sécurité et les règles métier, puis ajouté la
+            conteneurisation, Nginx et le déploiement. Docker, Nginx et le
+            déploiement ne faisaient pas partie des missions confiées par le
+            professeur.
+          </p>
+          <details class="initiative-card">
+            <summary>A · Authentification et sécurité avancées</summary>
+            <p>
+              JWT Access Token et cookie HttpOnly, Refresh Token et endpoints
+              refresh / logout avec expirations distinctes. Empreinte navigateur
+              FGP et hash, validation du fingerprint dans le JWT. TokenFamilyId,
+              rotation des refresh tokens, révocation des anciens tokens,
+              détection de réutilisation d’un token révoqué et révocation de
+              toute sa famille.
+            </p>
+          </details>
+          <details class="initiative-card">
+            <summary>B · Validation métier des PFMP</summary>
+            <p>
+              Vérification de la démarche préalable, détection des
+              chevauchements, contrôle des dates, du planning, des horaires et
+              des heures, de la durée hebdomadaire, de l’organisation et des
+              informations obligatoires.
+            </p>
+          </details>
+          <details class="initiative-card">
+            <summary>C · Architecture et services backend</summary>
+            <p>
+              ICurrentUserService, IRoleService, IPfmpAccessService et
+              IPlanningValidationService : séparation des responsabilités,
+              réduction de la duplication et maintenance facilitée.
+            </p>
+          </details>
+          <details class="initiative-card">
+            <summary>D · Autorisations contextualisées</summary>
+            <p>
+              Contrôles selon l’utilisateur courant, son rôle, sa relation avec
+              la PFMP et les permissions propres à chaque action.
+            </p>
+          </details>
+          <details class="initiative-card">
+            <summary>E · Gestion complète des présences</summary>
+            <p>
+              Initialisation des journées, mise à jour des présences, absences,
+              retards et justificatifs ; contrôle de la période de PFMP et des
+              droits selon le rôle.
+            </p>
+          </details>
+          <details class="initiative-card">
+            <summary>F · Gestion des organisations</summary>
+            <p>
+              Gestion des organisations au-delà de la simple recherche, avec
+              contrôle des informations nécessaires aux PFMP.
+            </p>
+          </details>
+          <details class="initiative-card">
+            <summary>G · Sécurisation de la messagerie</summary>
+            <p>
+              Vérification du droit d’accès à la PFMP avant toute lecture ou
+              tout envoi de message.
+            </p>
+          </details>
+          <details class="initiative-card">
+            <summary>H · Docker — initiative personnelle</summary>
+            <p>
+              Conteneurs API, MySQL et frontend, orchestration Docker Compose,
+              communication entre conteneurs, variables d’environnement, volume
+              MySQL persistant, healthcheck, ports et démarrage coordonné.
+            </p>
+          </details>
+          <details class="initiative-card">
+            <summary>I · Nginx — initiative personnelle</summary>
+            <p>
+              Distribution de Flutter Web, routage SPA et reverse proxy /api
+              vers ASP.NET Core.
+            </p>
+          </details>
+          <details class="initiative-card">
+            <summary>J · Déploiement — initiative personnelle</summary>
+            <p>
+              Configuration de production avec Docker et Nginx : ports,
+              pare-feu, réseau, variables d’environnement, persistance MySQL,
+              sauvegarde / restauration et résolution des problèmes de
+              déploiement.
+            </p>
+          </details>
+        </section>
+        <section class="modal-section">
+          <h3>Compétences développées</h3>
+          <div class="skills-groups">
+            <article>
+              <h4>Développement &amp; données</h4>
+              <p>
+                API REST ASP.NET Core · C# / POO · EF Core / MySQL · LINQ ·
+                intégration JSON / HTTP · validation métier et intégrité des
+                données
+              </p>
+            </article>
+            <article>
+              <h4>Sécurité &amp; architecture</h4>
+              <p>
+                JWT · HttpOnly · rotation des refresh tokens · fingerprint ·
+                autorisations par rôle et contexte · séparation des
+                responsabilités
+              </p>
+            </article>
+            <article>
+              <h4>Infrastructure &amp; exploitation</h4>
+              <p>
+                Docker / Docker Compose · volumes et healthchecks · Nginx /
+                reverse proxy / SPA · configuration de production · ports et
+                réseau · sauvegarde / restauration MySQL
+              </p>
+            </article>
+            <article>
+              <h4>Méthode &amp; collaboration</h4>
+              <p>
+                Intégration frontend / backend · débogage et dépannage · Git /
+                GitHub · travail en équipe · documentation technique
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="modal-section">
+          <h3>Technologies &amp; outils</h3>
+          <div class="technology-tiles">
+            <div class="technology-tile">
+              <img
+                alt=""
+                height="36"
+                loading="lazy"
+                src="images/technologies/csharp.svg"
+                width="36"
+              /><span>C#</span>
+            </div>
+            <div class="technology-tile">
+              <img
+                alt=""
+                height="36"
+                loading="lazy"
+                src="images/technologies/dotnet.svg"
+                width="36"
+              /><span>ASP.NET Core</span>
+            </div>
+            <div class="technology-tile">
+              <img
+                alt=""
+                height="36"
+                loading="lazy"
+                src="images/technologies/dotnet.svg"
+                width="36"
+              /><span>Entity Framework Core</span>
+            </div>
+            <div class="technology-tile">
+              <img
+                alt=""
+                height="36"
+                loading="lazy"
+                src="images/technologies/mysql.svg"
+                width="36"
+              /><span>MySQL</span>
+            </div>
+            <div class="technology-tile">
+              <img
+                alt=""
+                height="36"
+                loading="lazy"
+                src="images/technologies/docker.svg"
+                width="36"
+              /><span>Docker / Compose</span>
+            </div>
+            <div class="technology-tile">
+              <img
+                alt=""
+                height="36"
+                loading="lazy"
+                src="images/technologies/nginx.svg"
+                width="36"
+              /><span>Nginx</span>
+            </div>
+            <div class="technology-tile">
+              <img
+                alt=""
+                height="36"
+                loading="lazy"
+                src="images/technologies/github.svg"
+                width="36"
+              /><span>Git / GitHub</span>
+            </div>
+            <div class="technology-tile">
+              <img
+                alt=""
+                height="36"
+                loading="lazy"
+                src="images/technologies/flutter.svg"
+                width="36"
+              /><span>Flutter Web · intégration</span>
+            </div>
+          </div>
+          <div class="modal-tags">
+            <span>ASP.NET Core Web API</span><span>LINQ</span
+            ><span>REST / JSON</span><span>JWT</span><span>HttpOnly</span
+            ><span>Docker Compose</span>
+          </div>
+          <p>Flutter Web : contexte d’intégration frontend / backend.</p>
+        </section>
+        <section class="modal-section">
+          <h3>Ressources</h3>
+          <div class="modal-resources">
+            <a
+              href="https://github.com/HajiKing-ops/pfmp"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Voir le dépôt GitHub</a
+            ><a download="" href="docs/project-overview-pfmp.md"
+              >Documentation du projet (.md)</a
+            ><button
+              aria-controls="photo-gallery-modal"
+              aria-haspopup="dialog"
+              class="open-gallery"
+              type="button"
+            >
+              📷 Voir les photos (13)
+            </button>
+          </div>
+          <!-- Rapport à ajouter : docs/rapport-stage-pfmp-manager.pdf -->
+        </section>
+        <section class="modal-section">
+          <h3>État du projet</h3>
+          <p>
+            Projet de stage réalisé. Certaines interfaces enseignants, les tests
+            et la mise en production HTTPS restent à consolider ; le projet
+            n’est pas présenté comme prêt pour la production.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div
+      aria-labelledby="gallery-title"
+      aria-modal="true"
+      class="photo-gallery-modal"
+      hidden=""
+      id="photo-gallery-modal"
+      role="dialog"
+    >
+      <div class="photo-gallery-content" tabindex="-1">
+        <div class="dialog-toolbar">
+          <button
+            aria-label="Fermer la galerie"
+            class="gallery-close"
+            type="button"
+          >
+            ✕
+          </button>
+        </div>
+        <h2 id="gallery-title">Photos du projet PFMP Manager</h2>
+        <p>
+          13 captures du résultat de l’équipe. Interface Flutter Web
+          principalement réalisée par Lenny Paul ; backend, API, sécurité,
+          données et déploiement principalement réalisés par Roman.
+        </p>
+        <div class="modal-gallery">
+          <button
+            aria-label="Agrandir : Connexion"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Connexion"
+              loading="lazy"
+              src="images/project-pfmp/login.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Accueil"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Accueil"
+              loading="lazy"
+              src="images/project-pfmp/accueil.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Recherche de PFMP"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Recherche de PFMP"
+              loading="lazy"
+              src="images/project-pfmp/recherche pfmp.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Journal de bord"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Journal de bord"
+              loading="lazy"
+              src="images/project-pfmp/journal de bord.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Création d’une entrée du journal"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Création d’une entrée du journal"
+              loading="lazy"
+              src="images/project-pfmp/create journal.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Messagerie"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Messagerie"
+              loading="lazy"
+              src="images/project-pfmp/msg.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Mes PFMP"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Mes PFMP"
+              loading="lazy"
+              src="images/project-pfmp/mes pfmp.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Mon profil"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Mon profil"
+              loading="lazy"
+              src="images/project-pfmp/mon profil.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Espace d’administration"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Espace d’administration"
+              loading="lazy"
+              src="images/project-pfmp/admin view.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Gestion des périodes"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Gestion des périodes"
+              loading="lazy"
+              src="images/project-pfmp/gestion des periodes.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Détails d’une période"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Détails d’une période"
+              loading="lazy"
+              src="images/project-pfmp/info-gestion-des-periodes.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Messagerie de l’administration"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Messagerie de l’administration"
+              loading="lazy"
+              src="images/project-pfmp/msg-view-admin.png"
+            />
+          </button>
+          <button
+            aria-label="Agrandir : Capture complémentaire du projet"
+            class="gallery-thumbnail"
+            type="button"
+          >
+            <img
+              alt="PFMP Manager — Capture complémentaire du projet"
+              loading="lazy"
+              src="images/project-pfmp/Capture d'écran 2026-09-04 225256.png"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="Aperçu agrandi de la capture"
+      aria-modal="true"
+      class="image-preview"
+      hidden=""
+      id="image-preview"
+      role="dialog"
+    >
+      <button
+        aria-label="Fermer l’aperçu agrandi"
+        class="image-preview-close"
+        type="button"
+      >
+        ✕
+      </button>
+      <img alt="Aperçu agrandi" />
+    </div>
+    <script defer="" src="script.js"></script>
+    <div
+      aria-labelledby="ecole42-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="ecole42"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="ecole42-title">École 42 Angoulême — Piscine</h2>
+        <p class="meta">
+          4 – 29 août 2025 · Participant au processus d’admission
+        </p>
+        <section class="modal-section">
+          <h3>Apprendre à apprendre</h3>
+          <p>
+            La Piscine m’a surtout appris comment apprendre : chercher, essayer,
+            déboguer, confronter une solution à celle des autres et recommencer.
+          </p>
+          <p>
+            Programmation intensive en C, pointeurs, gestion de la mémoire,
+            chaînes de caractères et algorithmique. Exercices individuels,
+            projets Rush, examens et évaluations entre pairs.
+          </p>
+          <p>C · Bash/Shell · Linux · Git · Vim · VS Code · Terminal</p>
+        </section>
+      </div>
+    </div>
+    <div
+      aria-labelledby="bts1-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="bts1"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="bts1-title">BTS SIO — 1re année</h2>
+        <p>2025–2026 · Lycée Eugène Jamot, Aubusson · SLAM</p>
+        <section class="modal-section">
+          <h3>Construire les fondations</h3>
+          <p>
+            J’ai choisi SLAM pour acquérir une base solide en développement
+            logiciel, tout en comprenant les systèmes, les réseaux et la
+            sécurité nécessaires à mon projet professionnel.
+          </p>
+          <p>
+            C#, PHP, HTML/CSS, JavaScript, SQL/MySQL, Flutter, Linux, réseaux,
+            cybersécurité, mathématiques, CEJM et CEJM appliquée.
+          </p>
+          <p>
+            Visual Studio, VS Code, Git/GitHub, Node.js, XAMPP, Laragon,
+            Notepad++, Wireshark, Nmap et Hashcat. Travaux réseau autour de
+            l’isolation par passerelle et d’iptables.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div
+      aria-labelledby="bts2-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="bts2"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="bts2-title">BTS SIO — 2e année</h2>
+        <p>2026–2027 · En cours · Lycée Eugène Jamot · SLAM</p>
+        <section class="modal-section">
+          <h3>Approfondir et documenter</h3>
+          <p>
+            Backend, architecture, sécurité, bases de données, JavaScript et C#.
+            Organisation des projets, documentation, préparation orale E5/E6,
+            portfolio, veille et recherche du second stage.
+          </p>
+          <p>
+            En complément des cours : HTB, lectures techniques, Medium et
+            expérimentations personnelles.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div
+      aria-labelledby="stage2-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="stage2"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="stage2-title">Stage de deuxième année</h2>
+        <p class="availability">
+          2027 — À la recherche d’un stage de deuxième année
+        </p>
+        <p>
+          Je souhaite approfondir le développement backend, la cybersécurité ou
+          le cloud au sein d’une équipe.
+        </p>
+        <p>
+          <a href="mailto:romansalamzada50@gmail.com">Échanger par email →</a>
+        </p>
+      </div>
+    </div>
+    <div
+      aria-labelledby="gsb-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="gsb"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="gsb-title">ApplicationFrais / GSB</h2>
+        <p class="status">Projet en cours d’amélioration · Projet individuel</p>
+        <section class="modal-section">
+          <h3>Mission du professeur</h3>
+          <p>
+            Développer une application de gestion des frais à partir de la
+            documentation et du cahier des charges. Seuls les documents ont été
+            fournis : l’implémentation est personnelle.
+          </p>
+        </section>
+        <section class="modal-section">
+          <h3>Ce que j’ai réalisé</h3>
+          <p>
+            Architecture PHP MVC : contrôleur frontal, quatre contrôleurs, cinq
+            modèles et six vues. Base MariaDB à sept tables, relations et
+            requêtes PDO préparées. Vérification des mots de passe, sessions et
+            contrôles de rôles.
+          </p>
+          <p>
+            Création mensuelle des fiches, initialisation des forfaits,
+            modification des quantités, ajout et suppression des frais hors
+            forfait, consultation par mois. Calcul des lignes quantité × tarif
+            et vérification de mots de passe hachés avec bcrypt.
+          </p>
+        </section>
+        <section class="modal-section">
+          <h3>Améliorations en cours</h3>
+          <p>
+            Finalisation du module comptable : identifiants et écrans,
+            correction, refus, validation et paiement. Restent aussi les reports
+            de frais tardifs, totaux validés, justificatifs, validation des
+            saisies, verrouillage des fiches closes, protection CSRF et gestion
+            des sessions.
+          </p>
+          <p>
+            La documentation et les données de démonstration doivent également
+            être consolidées. L’application n’est pas présentée comme prête pour
+            la production.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div
+      aria-labelledby="tonton-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="tonton"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="tonton-title">Tonton Primeur</h2>
+        <p class="status">Projet terminé · BTS SIO SLAM · Individuel</p>
+        <section class="modal-section">
+          <h3>Mission et réalisation</h3>
+          <p>
+            Réaliser une application C# Windows Forms connectée à MySQL/MariaDB
+            pour gérer les articles et fournisseurs. J’ai réalisé seul le
+            travail demandé : affichage, sélection, ajout, modification,
+            suppression avec confirmation et tri A→Z / Z→A.
+          </p>
+          <p>
+            DataGridView, ComboBox des fournisseurs, contrôles de saisie et
+            actualisation des données. La relation fournisseur → articles
+            empêche la suppression d’un fournisseur encore utilisé.
+          </p>
+        </section>
+        <section class="modal-section">
+          <h3>Accès aux données</h3>
+          <p>
+            Classe Database dédiée, MySqlConnector, MySqlCommand,
+            MySqlDataAdapter et DataTable. ADO.NET, requêtes
+            INSERT/UPDATE/DELETE paramétrées et blocs using.
+          </p>
+          <p>
+            Base stock_fruits_legumes : tables fournisseur et article.
+            Environnement : Visual Studio, XAMPP, Git/GitHub.
+          </p>
+        </section>
+        <a
+          class="btn btn-primary"
+          href="https://github.com/HajiKing-ops/tonton-primeur"
+          >Voir le dépôt GitHub ↗</a
+        >
+      </div>
+    </div>
+    <div
+      aria-labelledby="aux-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="aux"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="aux-title">Aux Claviers Citoyens API</h2>
+        <section class="modal-section">
+          <h3>Un client REST réutilisable</h3>
+          <p>
+            Python et requests : inscription, connexion, JWT Bearer, tournois,
+            équipes, matchs, rounds et utilisateurs. Classe ApiClient commune
+            aux appels GET, POST, PUT et DELETE, opérations CRUD et menu CLI.
+          </p>
+          <p>
+            Ce projet met en pratique la séparation des responsabilités et la
+            réduction des répétitions (DRY).
+          </p>
+        </section>
+        <a
+          class="btn btn-primary"
+          href="https://github.com/HajiKing-ops/aux-claviers-api"
+          >Voir le dépôt GitHub ↗</a
+        >
+      </div>
+    </div>
+    <div
+      aria-labelledby="poker-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="poker"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="poker-title">Poker — Console C#</h2>
+        <section class="modal-section">
+          <h3>Logique de jeu et fichiers</h3>
+          <p>
+            Application console .NET Framework : déroulement de la partie,
+            évaluation des mains et scores enregistrés dans scores.txt.
+          </p>
+          <p>
+            Le chiffrement de César utilisé pour les scores est un exercice
+            pédagogique ; il ne constitue pas une protection de sécurité réelle.
+          </p>
+        </section>
+        <a class="btn btn-primary" href="https://github.com/HajiKing-ops/Poker"
+          >Voir le dépôt GitHub ↗</a
+        >
+      </div>
+    </div>
+    <div
+      aria-labelledby="tp-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="tp"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="tp-title">Progression — Interfaces graphiques</h2>
+        <section class="modal-section">
+          <h3>C# Windows Forms</h3>
+          <p>
+            Du formulaire simple au MDI : validation par expressions régulières,
+            données partagées/statiques, âge et statut, sous Visual Studio.
+          </p>
+          <h3>Python</h3>
+          <p>
+            Tkinter puis PyQt5 MDI : signaux/slots, validation des formulaires,
+            expressions régulières et fenêtres utilisateurs/actualités.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div
+      aria-labelledby="ai-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="ai"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="ai-title">Agent IA local — Ollama / OpenClaw / WhatsApp</h2>
+        <section class="modal-section">
+          <h3>Expérimentation personnelle</h3>
+          <p>
+            Auto-hébergement d’un LLM, configuration de l’agent, intégration
+            WhatsApp et fichiers d’instructions définissant son comportement et
+            ses règles d’exécution des outils. Recherche, tests et dépannage de
+            l’intégration locale.
+          </p>
+          <p>Projet personnel sans dépôt GitHub public à ce jour.</p>
+        </section>
+      </div>
+    </div>
+    <div
+      aria-labelledby="htb-title"
+      aria-modal="true"
+      class="modal"
+      hidden=""
+      id="htb"
+      role="dialog"
+    >
+      <div class="modal-content">
+        <div class="dialog-toolbar">
+          <button aria-label="Fermer les détails" class="modal-close">✕</button>
+        </div>
+        <h2 id="htb-title">Hack The Box Academy</h2>
+        <section class="modal-section">
+          <h3>Modules terminés</h3>
+          <p>
+            Linux Fundamentals · Network Enumeration with Nmap · Attacking Web
+            Applications with Ffuf · Login Brute Forcing · Introduction to
+            Academy.
+          </p>
+          <h3>Modules en cours</h3>
+          <p>
+            Hashcat · SQLMap Essentials · File Inclusion · Introduction to
+            Networking · Windows Fundamentals · Introduction to Python 3 ·
+            Footprinting · Introduction to C# · WEP Attacks.
+          </p>
+          <h3>Régularité</h3>
+          <p>
+            Badges Unwavering User, Constant Champion et Cyber Rookie 365. Ces
+            badges témoignent de la régularité de l’apprentissage et ne sont pas
+            des certifications professionnelles.
+          </p>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
