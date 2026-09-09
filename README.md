@@ -26,7 +26,7 @@ Avant d’ajouter un document ou une photo, retirer les identifiants personnels,
 
 Actualiser ensemble la carte, la fenêtre, le CV public et les repères BTS. ApplicationFrais reste en amélioration, le stage 2 en recherche et Holmes CTF en préparation tant que de nouvelles preuves ne permettent pas de modifier ces statuts. Le rôle de Lenny Paul dans le frontend PFMP doit rester explicite.
 
-L’attestation 42 doit être décrite selon son contenu réel (inscription/participation au processus d’admission), jamais comme un diplôme ou une validation du cursus 42. Les formations InfoTech Kamgar ne sont pas des certifications officielles Microsoft.
+L’attestation 42 doit être décrite selon son contenu réel (inscription/participation au processus d’admission), jamais comme un diplôme ou une validation du cursus 42. Les formations InfoTech Kamgar ne sont pas des certifications officielles Microsoft. La lettre de recommandation Co’ordi est publiée dans la fenêtre de cette expérience. L’attestation d’emploi reste privée car elle contient des informations personnelles. Ces documents confirment le rôle et la période officielle du 6 janvier 2025 au 13 août 2025.
 
 ## Veille
 
