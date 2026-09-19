@@ -11,6 +11,7 @@ for (const name of [
   "docs",
   "cv",
   "certificates",
+  "fr",
 ])
   fs.cpSync(path.join(root, name), path.join(out, name), { recursive: true });
 console.log("Static portfolio prepared in dist");

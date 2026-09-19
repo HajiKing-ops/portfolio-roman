@@ -1896,6 +1896,21 @@ section[id] > h2 {
 .future-road p {
   margin-bottom: 8px;
 }
+.ctf-evidence {
+  margin: 20px 0 0;
+}
+.ctf-evidence img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.ctf-evidence figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2327,3 +2342,16 @@ thead {
     margin-top: 12px;
   }
 }
+
+
+/* Language switch */
+.language-switch {
+  flex: 0 0 auto;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.language-switch:hover { color: #1d4ed8; }

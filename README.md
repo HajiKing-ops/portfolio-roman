@@ -1,37 +1,85 @@
-# Portfolio de Roman Salamzada
+# Roman Salamzada — Bilingual Portfolio
 
-Portfolio statique français BTS SIO SLAM, amélioré à partir du site existant. Aucun framework ni dépendance nécessaire au fonctionnement : HTML, CSS, JavaScript et fichiers locaux.
+Personal portfolio presenting my education, professional experience, technical projects, certifications, and technology watch.
 
-## Ouvrir et vérifier
+The website is designed for two audiences while keeping the same projects, evidence, and visual identity:
 
-Ouvrir `index.html` directement, ou servir le dossier avec un serveur local. `npm run check` vérifie la syntaxe JavaScript. `npm run build` copie uniquement les fichiers publics vers `dist/` pour l’hébergement statique.
+- **English / International:** [romansalamzada.dev](https://romansalamzada.dev/)
+- **French / France:** [romansalamzada.dev/fr/](https://romansalamzada.dev/fr/)
 
-La configuration Sites se trouve dans `.openai/hosting.json`. Le dossier `dist/` est généré et ne doit pas être modifié à la main. Les sources de référence sont à la racine.
+## About the portfolio
 
-## Modifier le contenu
+I am a BTS SIO student in the Software Development track (SLAM), with interests in backend development, systems, cybersecurity, cloud, and a long-term objective of working toward MLOps.
 
-- `index.html` : neuf sections et fenêtres de détail. Chaque carte possède un bouton `data-open-layer` qui cible l’identifiant d’une fenêtre.
-- `style.css` : styles existants préservés et adaptations finales identifiées par le commentaire « Final portfolio refinements ».
-- `script.js` : pile de fenêtres, navigation mobile, focus, fermeture Échap, galerie et prévisualisation. Le script est chargé avec `defer` pour inclure toutes les fenêtres.
-- `images/` : visuels publics, sources dans `images/SOURCES.md` et `images/technologies/SOURCES.md`.
-- `cv/` et `certificates/` : uniquement les versions publiques contrôlées.
+The portfolio includes:
 
-## Ajouter une galerie
+- education and professional experience presented in reverse chronological order;
+- technical projects with detailed descriptions and supporting evidence;
+- backend, API, database, security, systems, networking, and DevOps skills;
+- certifications and additional training;
+- a technology watch focused on MLOps;
+- separate French and English CV downloads.
 
-Reprendre la structure de `coordi-gallery` : une fenêtre `.photo-gallery-modal`, une barre avec un bouton de fermeture puis des boutons `.gallery-thumbnail` contenant une image avec un texte alternatif. Utiliser un identifiant unique et un bouton `data-open-layer` dans le détail du projet. Le système JavaScript retrouve automatiquement ces éléments au chargement ; aucune logique supplémentaire n’est nécessaire.
+## Featured projects
 
-Avant d’ajouter un document ou une photo, retirer les identifiants personnels, numéros de téléphone, adresses privées et références de matériel. Ne pas déposer l’original sensible dans un dossier publié, même si aucun lien ne le pointe.
+- **PFMP Manager** — internship management application developed as a team project. My work focuses on the ASP.NET Core backend, REST API, EF Core/MySQL, security, Docker, Nginx, and deployment. The Flutter Web frontend was mainly developed by Lenny Paul.
+- **ApplicationFrais / GSB** — individual PHP MVC expense management application currently being improved.
+- **Tonton Primeur** — completed C# Windows Forms and MySQL/MariaDB management application.
+- **PHP Authentication System** — secondary learning project covering registration, login, sessions, password security, PDO, and MariaDB.
+- **Aux Claviers Citoyens API** — Python client for a REST API using JWT authentication and CRUD operations.
+- **Poker** — C# console project with gameplay logic and score persistence.
 
-## Mise à jour des statuts
+The portfolio also documents my Co’ordi work experience, the École 42 Angoulême Piscine, Hack The Box Academy progress, and my first solo Blue Team / DFIR participation in Holmes CTF 2026.
 
-Actualiser ensemble la carte, la fenêtre, le CV public et les repères BTS. ApplicationFrais reste en amélioration, le stage 2 en recherche et Holmes CTF en préparation tant que de nouvelles preuves ne permettent pas de modifier ces statuts. Le rôle de Lenny Paul dans le frontend PFMP doit rester explicite.
+## Main features
 
-L’attestation 42 doit être décrite selon son contenu réel (inscription/participation au processus d’admission), jamais comme un diplôme ou une validation du cursus 42. Les formations InfoTech Kamgar ne sont pas des certifications officielles Microsoft. La lettre de recommandation Co’ordi est publiée dans la fenêtre de cette expérience. L’attestation d’emploi reste privée car elle contient des informations personnelles. Ces documents confirment le rôle et la période officielle du 6 janvier 2025 au 13 août 2025.
+- English site at `/` and French site at `/fr/`;
+- `EN | FR` language switch with no automatic redirect;
+- responsive desktop and mobile navigation;
+- project and experience detail dialogs;
+- photo galleries with fullscreen previews;
+- accessible keyboard and focus handling for dialogs;
+- reciprocal `hreflang`, canonical URLs, and language metadata;
+- downloadable CVs, certificates, project documentation, and supporting evidence.
 
-## Veille
+## Technologies
 
-La fiche MLflow est une entrée initiale fondée sur une source vérifiée le 7 septembre 2026, sans prétendre à une lecture ou un essai personnel déjà réalisé par Roman. Ajouter les nouvelles fiches dans la section `veille`, avec date de lecture, source, évolution observée, intérêt, synthèse personnelle et éventuellement lien vers une expérience réelle.
+The portfolio itself uses semantic HTML, responsive CSS, and vanilla JavaScript. No frontend framework or runtime dependency is required.
 
-## Hébergement
+Projects presented in the portfolio use technologies including C#, ASP.NET Core, Entity Framework Core, PHP, Python, REST/JSON, JWT, MySQL/MariaDB, SQL, Docker, Nginx, Git/GitHub, Windows Forms, and Linux.
 
-Publier uniquement `dist/` après construction. Les sauvegardes anciennes du dossier d’origine, le rapport d’audit privé et les fichiers de travail ne font pas partie du site. L’aperçu Sites créé pour cette livraison reste privé ; son accès ne doit pas être confondu avec une publication accessible à un jury ou un recruteur.
+## Project structure
+
+```text
+.
+├── index.html          # English portfolio
+├── fr/
+│   └── index.html      # French portfolio
+├── style.css           # Shared responsive design
+├── script.js           # Navigation, dialogs, galleries, and focus handling
+├── images/             # Portrait, project captures, logos, and evidence
+├── docs/               # Recommendation letter and project documentation
+├── certificates/       # Public certificates
+├── cv/                 # French and English CV files
+├── build.cjs           # Static production build
+├── package.json        # Build and JavaScript check commands
+└── dist/               # Generated deployment output
+```
+
+## CV files
+
+- English pages use `cv/Roman_Salamzada_CV_EN.pdf`.
+- French pages use `cv/Roman_Salamzada_CV_FR.pdf`.
+
+## Run locally
+
+No dependencies need to be installed. Serve the project root with a static web server so both `/` and `/fr/` routes work correctly.
+
+To check the JavaScript and generate the deployment folder:
+
+```bash
+npm run check
+npm run build
+```
+
+The build command copies the two language versions and all public assets into `dist/`.
