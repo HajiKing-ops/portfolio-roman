@@ -57,6 +57,9 @@ Projects presented in the portfolio use technologies including C#, ASP.NET Core,
 │   └── index.html      # French portfolio
 ├── style.css           # Shared responsive design
 ├── script.js           # Navigation, dialogs, galleries, and focus handling
+├── favicon.svg         # Browser icon
+├── robots.txt          # Search-engine crawling rules
+├── sitemap.xml         # English and French canonical URLs
 ├── images/             # Portrait, project captures, logos, and evidence
 ├── docs/               # Recommendation letter and project documentation
 ├── certificates/       # Public certificates

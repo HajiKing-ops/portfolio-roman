@@ -1,14 +1,14 @@
 // Mobile navigation.
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const menuLabels = document.documentElement.lang.toLowerCase().startsWith("fr")
+  ? { open: "Ouvrir le menu", close: "Fermer le menu" }
+  : { open: "Open menu", close: "Close menu" };
 function setMenu(open) {
   navLinks.classList.toggle("active", open);
   menuToggle.textContent = open ? "✕" : "☰";
   menuToggle.setAttribute("aria-expanded", String(open));
-  menuToggle.setAttribute(
-    "aria-label",
-    open ? "Fermer le menu" : "Ouvrir le menu",
-  );
+  menuToggle.setAttribute("aria-label", open ? menuLabels.close : menuLabels.open);
 }
 setMenu(false);
 menuToggle.addEventListener("click", () =>

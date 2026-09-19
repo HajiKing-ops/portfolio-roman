@@ -12,6 +12,9 @@ for (const name of [
   "cv",
   "certificates",
   "fr",
+  "favicon.svg",
+  "robots.txt",
+  "sitemap.xml",
 ])
   fs.cpSync(path.join(root, name), path.join(out, name), { recursive: true });
 console.log("Static portfolio prepared in dist");
