@@ -12,6 +12,7 @@ for (const name of [
   "cv",
   "certificates",
   "fr",
+  "legal",
   "favicon.svg",
   "robots.txt",
   "sitemap.xml",

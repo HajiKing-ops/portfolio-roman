@@ -3,16 +3,30 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://romansalamzada.dev/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://romansalamzada.dev/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://romansalamzada.dev/fr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://romansalamzada.dev/" />
   </url>
   <url>
     <loc>https://romansalamzada.dev/fr/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://romansalamzada.dev/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://romansalamzada.dev/fr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://romansalamzada.dev/" />
+  </url>
+  <url>
+    <loc>https://romansalamzada.dev/legal/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romansalamzada.dev/legal/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://romansalamzada.dev/fr/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://romansalamzada.dev/legal/" />
+  </url>
+  <url>
+    <loc>https://romansalamzada.dev/fr/mentions-legales/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romansalamzada.dev/legal/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://romansalamzada.dev/fr/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://romansalamzada.dev/legal/" />
   </url>
 </urlset>
