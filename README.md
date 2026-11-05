@@ -1,88 +1,75 @@
 # Roman Salamzada — Bilingual Portfolio
 
-Personal portfolio presenting my education, professional experience, technical projects, certifications, and technology watch.
+Personal student portfolio presenting education, experience, projects, skills, certifications, and a technology watch. Built with HTML, responsive CSS, and vanilla JavaScript, without a frontend framework or runtime dependencies.
 
-The website is designed for two audiences while keeping the same projects, evidence, and visual identity:
+- **English / International:** [romansalamzada.dev](https://romansalamzada.dev/) at `/`.
+- **French:** [romansalamzada.dev/fr/](https://romansalamzada.dev/fr/) at `/fr/`.
+- Both versions share the `EN | FR` switch, cards, detail dialogs, galleries, and keyboard/focus handling.
 
-- **English / International:** [romansalamzada.dev](https://romansalamzada.dev/)
-- **French / France:** [romansalamzada.dev/fr/](https://romansalamzada.dev/fr/)
+## Current projects
 
-## About the portfolio
+- **PFMP Manager** — flagship project, completed during a team internship. Roman’s contribution covers the ASP.NET Core backend, REST API, EF Core / MySQL, security, Docker, Nginx, deployment, and integration. Lenny Paul mainly developed the Flutter Web frontend.
+- **Personal Command Center — Developer Edition** — personal project in development. A local-first ASP.NET Core / .NET 10 dashboard combines 1–100 recent GitHub commits with optional persistent SQLite context and NVIDIA Nemotron through Nebius Token Factory. It generates a progress summary and requests exactly three next tasks; the dashboard extracts up to three suggestions. Context creation, retrieval, and goal updates are API-only. Only context is persisted. Source/diff inspection, feature verification, task/history storage, and production deployment are not claimed. Began as a project direction for the Nebius × NVIDIA Global AI Hackathon; no award or official outcome is claimed. **Repository currently private.**
+- **Aux Claviers Citoyens — ASP.NET Core API** — separate BTS SIO SLAM project in progress: C# / .NET 10, EF Core / Pomelo / MySQL, JWT authentication and user-management foundations, DTOs, dependency injection, and progressive Controller → Service → Repository → DbContext separation. Partially layered; tournament integration, authentication lifecycle, and production readiness remain incomplete. **Repository currently private.**
+- **Aux Claviers Citoyens API — Python client** — distinct Python 3 / requests REST client with JWT Bearer, reusable ApiClient, GET/POST/PUT/DELETE, domain resources, and CLI menus. Its existing [public repository](https://github.com/HajiKing-ops/aux-claviers-api) remains attached only to the Python project.
+- **ApplicationFrais / GSB** — individual PHP MVC application: **Completed project · Individual / Projet terminé · Individuel**.
+- **Tonton Primeur** — completed individual C# Windows Forms / MySQL–MariaDB management application.
+- **PHP Authentication System** — secondary learning project with documented security limitations.
+- **Poker, interfaces/forms, and local AI experiment** — existing educational and personal work retained.
 
-I am a BTS SIO student in the Software Development track (SLAM), with interests in backend development, systems, cybersecurity, cloud, and a long-term objective of working toward MLOps.
+MLOps remains a future career objective, not a current professional title.
 
-The portfolio includes:
+## Training, cybersecurity, and evidence
 
-- education and professional experience presented in reverse chronological order;
-- technical projects with detailed descriptions and supporting evidence;
-- backend, API, database, security, systems, networking, and DevOps skills;
-- certifications and additional training;
-- a technology watch focused on MLOps;
-- separate French and English CV downloads.
+- **Hack The Box — Level 32 · Skilled** / **Hack The Box — Niveau 32 · Skilled**. Roman Salamzada · @D4rkne33 · France. Academy learning evidence retained; volatile statistics omitted.
+- **Root-Me PRO EDU — CTF Inter-Établissements 2026**, 4 November 2026, TraceForge, Post-BAC / BTS. Observed end-of-event scoreboard: 5,350 points, 32/91 validations (35.2%), 9th/12 teams. Not presented as a certified official final ranking.
+- **Hack The Box Holmes CTF 2026 — The Reichenbach Directive**, first solo Blue Team / DFIR CTF, 17–21 September 2026. Official certificate: **857th/5,637 teams, 1,700 points, 19/111 challenges**. The separate in-event screenshot remains labeled as progress evidence.
+- **Python Essentials 1**, Cisco Networking Academy, completed 23 September 2026. Offered by BTS SIO lycée J. Jaurès, Aubusson; instructor Roumaneix Doryan; certificate ID `2688ff96-cee9-4330-ac51-e228a904573c`.
+- **C Essentials 1** remains available alongside Python Essentials 1.
+- Co’ordi recommendation letter remains public; employment attestation remains private. Official dates: 6 January–13 August 2025.
+- Existing École 42 Piscine content retained; no attestation PDF is currently supplied in this project.
 
-## Featured projects
+Skills and the expandable BTS E5–E6 mapping include the new backend projects, API / AI integration, SQLite context, DTOs, dependency injection, JWT / PBKDF2 foundations, Python training, and Root-Me participation. Proposed mappings reference evidence rather than validate competencies. No skill percentages or invented levels are used.
 
-- **PFMP Manager** — internship management application developed as a team project. My work focuses on the ASP.NET Core backend, REST API, EF Core/MySQL, security, Docker, Nginx, and deployment. The Flutter Web frontend was mainly developed by Lenny Paul.
-- **ApplicationFrais / GSB** — individual PHP MVC expense management application currently being improved.
-- **Tonton Primeur** — completed C# Windows Forms and MySQL/MariaDB management application.
-- **PHP Authentication System** — secondary learning project covering registration, login, sessions, password security, PDO, and MariaDB.
-- **Aux Claviers Citoyens API** — Python client for a REST API using JWT authentication and CRUD operations.
-- **Poker** — C# console project with gameplay logic and score persistence.
+## Legal notices and privacy
 
-The portfolio also documents my Co’ordi work experience, the École 42 Angoulême Piscine, Hack The Box Academy progress, and my first solo Blue Team / DFIR participation in Holmes CTF 2026.
-
-## Main features
-
-- English site at `/` and French site at `/fr/`;
-- `EN | FR` language switch with no automatic redirect;
-- responsive desktop and mobile navigation;
-- project and experience detail dialogs;
-- photo galleries with fullscreen previews;
-- accessible keyboard and focus handling for dialogs;
-- reciprocal `hreflang`, canonical URLs, and language metadata;
-- downloadable CVs, certificates, project documentation, and supporting evidence.
-
-## Technologies
-
-The portfolio itself uses semantic HTML, responsive CSS, and vanilla JavaScript. No frontend framework or runtime dependency is required.
-
-Projects presented in the portfolio use technologies including C#, ASP.NET Core, Entity Framework Core, PHP, Python, REST/JSON, JWT, MySQL/MariaDB, SQL, Docker, Nginx, Git/GitHub, Windows Forms, and Linux.
+- English: [`/legal/`](https://romansalamzada.dev/legal/).
+- French: [`/fr/mentions-legales/`](https://romansalamzada.dev/fr/mentions-legales/).
+- Both pages reuse the existing design and navigation, link to each other through `EN | FR`, and are linked from the homepage footers.
+- The inspected source has no analytics, advertising, embeds, third-party widgets, contact form, tracking cookies, or tracking storage. No cookie banner is added. Notices distinguish site code from [GitHub Pages’ security IP logging](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection) and link to GitHub’s privacy statement.
 
 ## Project structure
 
 ```text
-.
-├── index.html          # English portfolio
-├── fr/
-│   └── index.html      # French portfolio
-├── style.css           # Shared responsive design
-├── script.js           # Navigation, dialogs, galleries, and focus handling
-├── favicon.svg         # Browser icon
-├── robots.txt          # Search-engine crawling rules
-├── sitemap.xml         # English and French canonical URLs
-├── images/             # Portrait, project captures, logos, and evidence
-├── docs/               # Recommendation letter and project documentation
-├── certificates/       # Public certificates
-├── cv/                 # French and English CV files
-├── build.cjs           # Static production build
-├── package.json        # Build and JavaScript check commands
-└── dist/               # Generated deployment output
+index.html                    # English portfolio
+fr/index.html                 # French portfolio
+legal/index.html              # English legal notice
+fr/mentions-legales/index.html # French legal notice
+style.css                     # Shared responsive design
+script.js                     # Navigation, dialogs, galleries, focus handling
+images/                       # Portrait, project captures, logos, evidence
+docs/                         # Public recommendation and project documentation
+certificates/                 # C Essentials, Python Essentials, Holmes
+cv/                           # Existing EN/FR CV files, unchanged
+favicon.svg, robots.txt       # Site assets and crawling rules
+sitemap.xml                   # Four canonical EN/FR portfolio/legal URLs
+build.cjs, package.json        # Dependency-free build and JavaScript check
+dist/                         # Generated static output
 ```
 
-## CV files
+Python certificate reused under its original filename:
+`Python_Essentials_1_certificate_romansalamzada50-gmail-com_2688ff96-cee9-4330-ac51-e228a904573c.pdf`.
 
-- English pages use `cv/Roman_Salamzada_CV_EN.pdf`.
-- French pages use `cv/Roman_Salamzada_CV_FR.pdf`.
+Other linked documents: `certificates/c-essentials-1-public.pdf`, `certificates/holmes-ctf-2026-d4rkne33.pdf`, and `docs/Lettre_recommandation_Roman_SALAMZADA_CoOrdi_v9.pdf`. Links use paths relative to each language page.
 
-## Run locally
+## Local verification and build
 
-No dependencies need to be installed. Serve the project root with a static web server so both `/` and `/fr/` routes work correctly.
-
-To check the JavaScript and generate the deployment folder:
+No package installation required. Serve the project root to use directory routes:
 
 ```bash
+python -m http.server 8765 --bind 127.0.0.1
 npm run check
 npm run build
 ```
 
-The build command copies the two language versions and all public assets into `dist/`.
+The build copies both homepages, both legal pages, shared files, and public assets into `dist/`. Private projects have no repository buttons. CV files remain unchanged.
