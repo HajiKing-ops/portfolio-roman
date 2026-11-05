@@ -23,7 +23,7 @@
 <header class="header">
 <nav class="navbar">
 <a class="logo" href="#accueil">RS.</a>
-<ul class="nav-links">
+<ul class="nav-links" id="primary-navigation">
 <li><a href="#apropos">About</a></li>
 <li><a href="#parcours">Education &amp; Experience</a></li>
 <li><a href="#realisations">Projects</a></li>
@@ -33,8 +33,8 @@
 <li><a href="#veille">Technology Watch</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-<button aria-label="Open menu" class="menu-toggle">☰</button>
-<a aria-label="French version" class="language-switch" href="fr/">EN | FR</a></nav>
+<button aria-controls="primary-navigation" type="button" aria-label="Open menu" class="menu-toggle">☰</button>
+<a aria-label="French version" class="language-switch" href="fr/index.html">EN | FR</a></nav>
 </header>
 <main>
 <section class="hero" id="accueil">
@@ -224,11 +224,29 @@
               </button>
 </div>
 </article>
+<article class="project-card" id="projet-command-center">
+<div class="project-content">
+<p class="eyebrow">Personal project · In development</p>
+<h3>Personal Command Center — Developer Edition</h3>
+<p>A local-first AI-assisted developer dashboard combining recent GitHub activity, persistent SQLite project context, and NVIDIA Nemotron through Nebius to summarize progress and suggest three next tasks.</p>
+<div class="project-tags"><span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>SQLite</span><span>GitHub API</span><span>NVIDIA Nemotron</span><span>JavaScript</span></div>
+<button aria-controls="command-center" aria-haspopup="dialog" aria-label="Learn more: Personal Command Center — Developer Edition" class="stage-link" data-open-layer="command-center" type="button">Learn more →</button>
+</div>
+</article>
+<article class="project-card" id="projet-aux-dotnet">
+<div class="project-content">
+<p class="eyebrow">BTS project · In progress</p>
+<h3>Aux Claviers Citoyens — ASP.NET Core API</h3>
+<p>A BTS SIO SLAM esports tournament API in progress, with JWT authentication, user-management foundations, EF Core / MySQL, and a progressive separation of controllers, services, and repositories.</p>
+<div class="project-tags"><span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>MySQL</span><span>JWT</span><span>REST</span></div>
+<button aria-controls="aux-dotnet" aria-haspopup="dialog" aria-label="Learn more: Aux Claviers Citoyens — ASP.NET Core API" class="stage-link" data-open-layer="aux-dotnet" type="button">Learn more →</button>
+</div>
+</article>
 <article class="project-card" id="projet-gsb">
 <div class="project-content">
-<p class="eyebrow">Project currently being improved · Individual</p>
+<p class="eyebrow">Completed project · Individual</p>
 <h3>ApplicationFrais / GSB</h3>
-<p>An individual PHP MVC expense management project based on teacher-provided specifications. The visitor module is advanced; the accounting module and further security and documentation work remain in progress.</p>
+<p>An individual PHP MVC expense management project based on teacher-provided specifications. The visitor module is advanced.</p>
 <div class="project-tags">
 <span>PHP</span><span>MVC</span><span>PDO</span><span>MariaDB</span>
 </div>
@@ -252,7 +270,7 @@
 </article>
 <article class="project-card" id="projet-auth-php">
 <div class="project-content">
-<p class="eyebrow">Technical learning project · Individual</p>
+<p class="eyebrow">Completed project · Individual</p>
 <h3>PHP authentication system</h3>
 <p>Secondary PHP learning project covering account registration, login, protected profiles, sessions, and password security. Not intended for production use.</p>
 <div class="project-tags">
@@ -266,7 +284,7 @@
 </article>
 <article class="project-card" id="projet-aux">
 <div class="project-content">
-<p class="eyebrow">BTS project</p>
+<p class="eyebrow">BTS project · Python client</p>
 <h3>Aux Claviers Citoyens API</h3>
 <p>Python client for the French Aux Claviers Citoyens REST API, with JWT authentication, API resources, and a command-line menu.</p>
 <div class="project-tags">
@@ -298,7 +316,7 @@
 <div class="project-tags">
 <span>WinForms</span><span>Tkinter</span><span>PyQt5</span>
 </div>
-<button aria-controls="tp" aria-haspopup="dialog" aria-label="Learn more → : Progression — Interfaces graphiques" class="stage-link" data-open-layer="tp" type="button">
+<button aria-controls="tp" aria-haspopup="dialog" aria-label="Learn more: Interfaces and forms" class="stage-link" data-open-layer="tp" type="button">
                 Learn more →
               </button>
 </div>
@@ -311,7 +329,7 @@
 <div class="project-tags">
 <span>Ollama</span><span>OpenClaw</span><span>WhatsApp</span>
 </div>
-<button aria-controls="ai" aria-haspopup="dialog" aria-label="Learn more → : Agent IA local — Ollama / OpenClaw / WhatsApp" class="stage-link" data-open-layer="ai" type="button">
+<button aria-controls="ai" aria-haspopup="dialog" aria-label="Learn more: Local AI agent — Ollama / OpenClaw / WhatsApp" class="stage-link" data-open-layer="ai" type="button">
                 Learn more →
               </button>
 </div>
@@ -423,7 +441,7 @@
 <article class="competence-card">
 <h3>Development</h3>
 <p>C#, Python, PHP, C, HTML/CSS and JavaScript.</p>
-<p class="proof">Internship management, Tonton, GSB, PHP authentication, Aux Claviers and TPs.</p>
+<p class="proof">Personal Command Center, both Aux Claviers projects, PFMP, Tonton, GSB, PHP authentication, practice projects, and Python Essentials 1 training.</p>
 <button aria-controls="tonton" aria-haspopup="dialog" aria-label="See a creation →: Tonton Primeur" class="stage-link" data-open-layer="tonton" type="button">
               View project →
             </button>
@@ -433,31 +451,27 @@
 </article>
 <article class="competence-card">
 <h3>Backend &amp; API</h3>
-<p>
-              ASP.NET Core, REST/JSON, EF Core, JWT, roles and permissions,
-              ADO.NET and PDO.
-            </p>
-<p class="proof">Internship management, Tonton, ApplicationFrais and PHP authentication.</p>
+<p>ASP.NET Core, REST/JSON, EF Core, JWT, DTOs, dependency injection, GitHub API, and external AI services. ADO.NET and PDO.</p>
+<p class="proof">Personal Command Center: GitHub API, AI integration, and error handling. Aux Claviers ASP.NET Core: DTOs, dependency injection, and service/repository separation. PFMP, Tonton, ApplicationFrais, and PHP authentication.</p>
 <button aria-controls="stage-modal" aria-haspopup="dialog" aria-label="View project →: PFMP Manager — Backend development" class="stage-link" data-open-layer="stage-modal" type="button">
               View project →
             </button>
 <button aria-controls="auth-php" aria-haspopup="dialog" aria-label="View project →: PHP authentication system" class="stage-link" data-open-layer="auth-php" type="button">
               View PHP project →
             </button>
+<button aria-controls="command-center" aria-haspopup="dialog" aria-label="View AI project: Personal Command Center — Developer Edition" class="stage-link" data-open-layer="command-center" type="button">View AI project →</button>
 </article>
 <article class="competence-card">
 <h3>Databases</h3>
-<p>
-              MySQL, MariaDB, SQL, relational modeling, CRUD and queries
-              configured.
-            </p>
-<p class="proof">Internship management, Tonton, ApplicationFrais and PHP authentication.</p>
+<p>MySQL, MariaDB, SQLite, SQL, relational modeling, EF Core, CRUD, and parameterized queries.</p>
+<p class="proof">Personal Command Center: SQLite project context. Aux Claviers ASP.NET Core: EF Core / MySQL and domain modeling. PFMP, Tonton, ApplicationFrais, and PHP authentication.</p>
 <button aria-controls="gsb" aria-haspopup="dialog" aria-label="View project →: ApplicationFrais / GSB" class="stage-link" data-open-layer="gsb" type="button">
               View project →
             </button>
 <button aria-controls="auth-php" aria-haspopup="dialog" aria-label="View project →: PHP authentication system" class="stage-link" data-open-layer="auth-php" type="button">
               View PHP project →
             </button>
+<button aria-controls="aux-dotnet" aria-haspopup="dialog" aria-label="View API project: Aux Claviers Citoyens — ASP.NET Core API" class="stage-link" data-open-layer="aux-dotnet" type="button">View API project →</button>
 </article>
 <article class="competence-card">
 <h3>Systems &amp; networks</h3>
@@ -479,13 +493,14 @@
               Linux, Nmap, ffuf and web security basics. Hashcat and SQLMap
               learning.
             </p>
-<p class="proof">HTB modules, internship app authentication security and PHP project.</p>
+<p class="proof">HTB modules, solo Holmes participation, and Root-Me with TraceForge: CTF practice, problem solving, and teamwork. Aux Claviers ASP.NET Core: JWT and PBKDF2 hashing; PFMP security and the PHP project.</p>
 <button aria-controls="htb" aria-haspopup="dialog" aria-label="View project →: Hack The Box Academy" class="stage-link" data-open-layer="htb" type="button">
               View project →
             </button>
 <button aria-controls="auth-php" aria-haspopup="dialog" aria-label="View project →: PHP authentication system" class="stage-link" data-open-layer="auth-php" type="button">
               View PHP project →
             </button>
+<button aria-controls="rootme-ctf" aria-haspopup="dialog" aria-label="View team CTF: Root-Me PRO EDU — Inter-Establishments CTF 2026" class="stage-link" data-open-layer="rootme-ctf" type="button">View team CTF →</button>
 </article>
 <article class="competence-card">
 <h3>DevOps &amp; tools</h3>
@@ -519,6 +534,8 @@
 </tr>
 </thead>
 <tbody>
+<tr><th>Personal Command Center</th><td>Design and develop an application solution; work in project mode; organize professional development</td><td>ASP.NET Core API, GitHub / Nebius / Nemotron orchestration, SQLite context, and JavaScript integration. Personal project in development; AI does not verify source code.</td></tr>
+<tr><th>Aux Claviers Citoyens — ASP.NET Core API</th><td>Design and develop an application solution; manage data; consider application security</td><td>EF Core / MySQL, DTOs, JWT and PBKDF2, progressive Controller → Service → Repository → DbContext separation. In progress; tournament integration and token lifecycle remain incomplete.</td></tr>
 <tr>
 <th>PFMP</th>
 <td>
@@ -550,8 +567,7 @@
                     data
                   </td>
 <td>
-                    MVC, PDO and relational basis. Incomplete accounting module;
-                    maintenance to be documented.
+                    MVC, PDO and relational basis. Completed individual project.
                   </td>
 </tr>
 <tr>
@@ -580,12 +596,9 @@
                   </td>
 </tr>
 <tr>
-<th>42 / HTB</th>
+<th>42 / HTB / Cisco / Root-Me</th>
 <td>Organize your professional development</td>
-<td>
-                    Independent learning, exercises and modules. Traces to
-                    keep.
-                  </td>
+<td>Independent learning, HTB modules, Python Essentials 1, and Root-Me team participation. Evidence is limited to documented training and participation.</td>
 </tr>
 </tbody>
 </table>
@@ -614,7 +627,7 @@
 </section>
 <section class="certifications-section" id="certifications">
 <p class="eyebrow">06 / TRAINING</p>
-<h2>Additional certifications &amp; training</h2>
+<h2>Certifications &amp; Additional Training</h2>
 <div class="cert-grid">
 <article class="competence-card">
 <p class="eyebrow">CISCO NETWORKING ACADEMY</p>
@@ -626,13 +639,17 @@
 <a download="" href="certificates/c-essentials-1-public.pdf">View the certificate ↗</a>
 </article>
 <article class="competence-card">
+<p class="eyebrow">CISCO NETWORKING ACADEMY</p>
+<h3>Python Essentials 1</h3>
+<p>Completed by Roman Salamzada on 23 September 2026, offered by BTS SIO lycée J. Jaurès, Aubusson, through Cisco Networking Academy. Instructor: Roumaneix Doryan.</p>
+<p class="certificate-id">Certificate ID : 2688ff96-cee9-4330-ac51-e228a904573c</p>
+<a download="" href="certificates/Python_Essentials_1_certificate_romansalamzada50-gmail-com_2688ff96-cee9-4330-ac51-e228a904573c.pdf">View certificate ↗</a>
+</article>
+<article class="competence-card">
 <p class="eyebrow">CONTINUOUS LEARNING</p>
 <h3>Hack The Box Academy</h3>
-<p>
-              Hack The Box username: @D4rkne33<br/>Level 26 · Apprentice rank<br/>State
-              communicated in September 2026.
-            </p>
-<button aria-controls="htb" aria-haspopup="dialog" aria-label="Modules et apprentissages → : Hack The Box Academy" class="stage-link" data-open-layer="htb" type="button">
+<p>Roman Salamzada · @D4rkne33 · France<br/>Hack The Box — Level 32 · Skilled</p>
+<button aria-controls="htb" aria-haspopup="dialog" aria-label="Modules and learning: Hack The Box Academy" class="stage-link" data-open-layer="htb" type="button">
               Modules and learning →
             </button>
 </article>
@@ -657,6 +674,13 @@
               Learn more →
             </button>
 </article>
+</div>
+<div class="cyber-note">
+<p class="eyebrow">CTF · 4 November 2026</p>
+<h3>Root-Me PRO EDU — Inter-Establishments CTF 2026</h3>
+<p>Participated with team TraceForge in the Post-BAC / BTS category.</p>
+<p>Observed end-of-event result: 5,350 points · 32/91 validations · 9th/12.</p>
+<button aria-controls="rootme-ctf" aria-haspopup="dialog" aria-label="View participation: Root-Me PRO EDU — Inter-Establishments CTF 2026" class="stage-link" data-open-layer="rootme-ctf" type="button">View participation →</button>
 </div>
 <div class="cyber-note">
 <p class="eyebrow">OUTSIDE OF BTS</p>
@@ -763,6 +787,7 @@
 <footer class="footer">
 <div class="footer-content">
 <p>© 2026 Roman Salamzada · BTS SIO — Software Development track</p>
+<a href="legal/index.html">Legal notice</a>
 <a href="#accueil">Back to top ↑</a>
 </div>
 </footer>
@@ -913,7 +938,7 @@
 <div aria-labelledby="coordi-gallery-title" aria-modal="true" class="photo-gallery-modal" hidden="" id="coordi-gallery" role="dialog">
 <div class="photo-gallery-content" tabindex="-1">
 <div class="dialog-toolbar">
-<button aria-label="Close la galerie Co’ordi" class="gallery-close" type="button">
+<button aria-label="Close Co’ordi gallery" class="gallery-close" type="button">
             ✕
           </button>
 </div>
@@ -933,7 +958,7 @@
 <figcaption>Co’ordi Team — Guéret, 2025</figcaption>
 </figure>
 <figure>
-<button aria-label="Enlarge: Maintenance d’un PC de bureau avec carte graphique" class="gallery-thumbnail" type="button">
+<button aria-label="Enlarge: Desktop PC maintenance with a graphics card" class="gallery-thumbnail" type="button">
 <img alt="Maintenance d’un PC de bureau avec carte graphique" loading="lazy" src="images/coordi/maintenance-pc.jpg"/>
 </button>
 <figcaption>
@@ -941,7 +966,7 @@
             </figcaption>
 </figure>
 <figure>
-<button aria-label="Enlarge: Intervention sur un mini-PC ouvert" class="gallery-thumbnail" type="button">
+<button aria-label="Enlarge: Work on an open mini PC" class="gallery-thumbnail" type="button">
 <img alt="Intervention sur un mini-PC ouvert" loading="lazy" src="images/coordi/maintenance-mini-pc.jpg"/>
 </button>
 <figcaption>Intervention on an open mini-PC</figcaption>
@@ -1289,7 +1314,7 @@
 <div aria-labelledby="gallery-title" aria-modal="true" class="photo-gallery-modal" hidden="" id="photo-gallery-modal" role="dialog">
 <div class="photo-gallery-content" tabindex="-1">
 <div class="dialog-toolbar">
-<button aria-label="Close la galerie" class="gallery-close" type="button">
+<button aria-label="Close gallery" class="gallery-close" type="button">
             ✕
           </button>
 </div>
@@ -1300,10 +1325,10 @@
           data and deployment mainly carried out by Roman.
         </p>
 <div class="modal-gallery">
-<button aria-label="Enlarge: Connexion" class="gallery-thumbnail" type="button">
+<button aria-label="Enlarge: Sign in" class="gallery-thumbnail" type="button">
 <img alt="PFMP Manager — Sign in" loading="lazy" src="images/project-pfmp/login.png"/>
 </button>
-<button aria-label="Enlarge: Accueil" class="gallery-thumbnail" type="button">
+<button aria-label="Enlarge: Home" class="gallery-thumbnail" type="button">
 <img alt="PFMP Manager — Home" loading="lazy" src="images/project-pfmp/accueil.png"/>
 </button>
 <button aria-label="Enlarge: Internship search" class="gallery-thumbnail" type="button">
@@ -1315,7 +1340,7 @@
 <button aria-label="Enlarge: Creating a Journal Entry" class="gallery-thumbnail" type="button">
 <img alt="PFMP Manager — Creating a Log Entry" loading="lazy" src="images/project-pfmp/create journal.png"/>
 </button>
-<button aria-label="Enlarge: Messagerie" class="gallery-thumbnail" type="button">
+<button aria-label="Enlarge: Messages" class="gallery-thumbnail" type="button">
 <img alt="PFMP Manager — Messages" loading="lazy" src="images/project-pfmp/msg.png"/>
 </button>
 <button aria-label="Enlarge: My internships" class="gallery-thumbnail" type="button">
@@ -1347,6 +1372,105 @@
         ✕
       </button>
 <img alt="Enlarged view"/>
+</div>
+<div aria-labelledby="command-center-title" aria-modal="true" class="modal" hidden="" id="command-center" role="dialog">
+<div class="modal-content">
+<div class="dialog-toolbar"><button aria-label="Close details" class="modal-close" type="button">✕</button></div>
+<h2 id="command-center-title">Personal Command Center — Developer Edition</h2>
+<p class="meta">Personal project · In development</p>
+<section class="modal-section">
+<h3>Understand progress and decide what comes next</h3>
+<p>A local-first developer dashboard answering: “What has changed recently, and what should I work on next?” One ASP.NET Core application hosts both the API and the HTML/CSS/vanilla JavaScript dashboard.</p>
+<p>The project began as an entry direction for the Nebius × NVIDIA Global AI Hackathon. No prize, ranking, or official result is claimed.</p>
+</section>
+<section class="modal-section">
+<h3>Implemented features</h3>
+<ul>
+<li>Retrieve 1–100 commits for a selected GitHub repository and branch, displaying messages, short SHAs, authors, dates, and commit links.</li>
+<li>Generate a development progress summary using NVIDIA Nemotron through Nebius Token Factory, with or without saved project context. The request asks for exactly three tasks; the dashboard extracts and displays up to three suggestions.</li>
+<li>Responsive dashboard, input validation, loading states, error messages, commit refresh, and analysis regeneration.</li>
+</ul>
+</section>
+<section class="modal-section">
+<h3>Persistent context — managed through the API</h3>
+<p>SQLite stores the project name, repository owner and name, description, technology stack, current goal, and last update in UTC. Context can be created and retrieved, its goal can be updated, and it can be incorporated into analysis.</p>
+<p>Only project context is persisted. Context creation and goal editing currently use API endpoints; dashboard forms for these actions are still to come.</p>
+</section>
+<section class="modal-section">
+<h3>Stack and architecture</h3>
+<p>C#, .NET 10, ASP.NET Core Web API, Entity Framework Core, SQLite, HttpClient, System.Text.Json, GitHub REST API, Nebius Token Factory, NVIDIA Nemotron, HTML, CSS, and vanilla JavaScript. Development configuration uses .NET User Secrets and an ASP.NET Core OpenAPI document.</p>
+<p>Current model: <code>nvidia/nemotron-3-super-120b-a12b</code>.</p>
+<details class="mapping"><summary>Technical paths and API routes</summary>
+<p>Dashboard → GitHubController → GitHubService → GitHub REST API.</p>
+<p>Dashboard → GitHubAnalysisController → GitHubAnalysisService → GitHubService and ProjectContextService → AppDbContext / SQLite; NemotronService → Nebius / NVIDIA Nemotron.</p>
+<p>ProjectContextController → ProjectContextService → AppDbContext. NemotronController → NemotronService.</p>
+<ul><li><code>GET /api/GitHub/{repositoryOwner}/{repositoryName}/commits</code></li><li><code>POST /api/Analysis</code></li><li><code>POST /api/Nemotron</code></li><li><code>POST /api/ProjectContext</code></li><li><code>GET /api/ProjectContext/{repositoryOwner}/{repositoryName}</code></li><li><code>PUT /api/ProjectContext/{repositoryOwner}/{repositoryName}/goal</code></li></ul>
+</details>
+<p><code>ServiceResult&lt;T&gt;</code> represents expected service outcomes. <code>GlobalExceptionHandler</code> handles unexpected exceptions with a generic HTTP 500 ProblemDetails response.</p>
+</section>
+<section class="modal-section">
+<h3>Current scope</h3>
+<p>Analysis uses commit metadata/messages and developer-provided context. It does not inspect full source files or diffs, or verify that features actually work.</p>
+<p>Task and analysis-history storage, suggestion approvals, progress tracking, and automation remain possible future work. Production authentication, deployment, a full automated test suite, and CI/CD are not presented as implemented.</p>
+<p>The repository is currently private, with publication planned when the project is finished.</p>
+</section>
+</div>
+</div>
+<div aria-labelledby="aux-dotnet-title" aria-modal="true" class="modal" hidden="" id="aux-dotnet" role="dialog">
+<div class="modal-content">
+<div class="dialog-toolbar"><button aria-label="Close details" class="modal-close" type="button">✕</button></div>
+<h2 id="aux-dotnet-title">Aux Claviers Citoyens — ASP.NET Core API</h2>
+<p class="meta">BTS project · In progress</p>
+<section class="modal-section">
+<h3>An esports tournament backend</h3>
+<p>A BTS SIO — Software Development track (SLAM) project aiming to centralize games, tournaments, dates and statuses, teams, players, rounds, matches, scores, accounts, and authenticated access. These domain objectives are not all operational features yet.</p>
+<p>This C# backend is separate from the existing Aux Claviers Citoyens Python REST client.</p>
+</section>
+<section class="modal-section">
+<h3>Implemented foundations</h3>
+<ul>
+<li>Authentication logic for email/password login, password-hash verification, role resolution, JWT and refresh-token generation, hashed refresh-token persistence, and logout revocation.</li>
+<li>User-management logic for administrator-restricted creation, lookup by ID, duplicate-email checks, partial profile and password updates, and DTO mapping. Current-user lookup still needs integration work.</li>
+<li>Domain models for users, refresh tokens, tournaments, teams, players, membership, games, rounds, matches, participation, events, and proposals.</li>
+</ul>
+</section>
+<section class="modal-section">
+<h3>Progressive separation of responsibilities</h3>
+<p>The application is partially layered. Its strongest user-management path follows <code>UtilisateurController → IUtilisateurService / UtilisateurService → IUtilisateurRepository / UtilisateurRepository → AppDbContext → EF Core / Pomelo → MySQL</code>.</p>
+<p>Authentication accesses AppDbContext and RoleService more directly. Tournament service/repository scaffolding exists, but controller integration and dependency-injection wiring are still incomplete.</p>
+<p>Current work progressively separates HTTP, business logic, and persistence using DTOs, ASP.NET Core dependency injection, asynchronous EF Core queries, and <code>ServiceResult&lt;T&gt;</code>.</p>
+</section>
+<section class="modal-section">
+<h3>Stack and security mechanisms</h3>
+<p>C#, .NET 10, ASP.NET Core Web API, Entity Framework Core, Pomelo.EntityFrameworkCore.MySql, MySQL, JWT Bearer, and OpenAPI.</p>
+<p>Password hashing uses PBKDF2-SHA256 with a random 16-byte salt and 100,000 iterations. JWTs use HMAC-SHA256 signing with issuer, audience, signing-key, and lifetime validation.</p>
+<p>AccessToken and RefreshToken cookies use HttpOnly and SameSite=Strict. Refresh tokens are generated cryptographically; only their SHA-256 hashes are persisted, with logout recording revocation.</p>
+</section>
+<section class="modal-section">
+<h3>Project status</h3>
+<p>The authentication lifecycle remains incomplete: a refresh endpoint, rotation, and token-reuse detection are not finished. Authorization and cookie security need further work before production use.</p>
+<p>Complete tournament, team, player, match, and score APIs remain in development. A frontend, automated test suite, Docker deployment, complete migration workflow, and CI/CD are not presented as completed.</p>
+<p>The repository is currently private, with publication planned later.</p>
+</section>
+</div>
+</div>
+<div aria-labelledby="rootme-ctf-title" aria-modal="true" class="modal" hidden="" id="rootme-ctf" role="dialog">
+<div class="modal-content">
+<div class="dialog-toolbar"><button aria-label="Close details" class="modal-close" type="button">✕</button></div>
+<h2 id="rootme-ctf-title">Root-Me PRO EDU — Inter-Establishments CTF 2026</h2>
+<section class="modal-section">
+<h3>Participation</h3>
+<p>4 November 2026 · TraceForge · Post-BAC / BTS</p><p>Participated with team TraceForge in the Post-BAC / BTS category.</p>
+</section>
+<section class="modal-section">
+<h3>Observed result</h3>
+<p>Observed end-of-event result: 5,350 points · 32/91 validations · 9th/12.</p><p>32 out of 91 validations, or 35.2%. These figures come from the scoreboard observed at the end of the event; they are not presented as a certified official final ranking.</p>
+</section>
+<section class="modal-section">
+<h3>Learning</h3>
+<p>Cybersecurity practice, problem solving, and teamwork. No specific challenge or technique is claimed without supporting evidence.</p>
+</section>
+</div>
 </div>
 <script defer="" src="script.js"></script>
 <div aria-labelledby="ecole42-title" aria-modal="true" class="modal" hidden="" id="ecole42" role="dialog">
@@ -1444,7 +1568,7 @@
 <button aria-label="Close details" class="modal-close">✕</button>
 </div>
 <h2 id="gsb-title">ApplicationFrais / GSB</h2>
-<p class="status">Project currently being improved · Individual project</p>
+<p class="status">Completed project · Individual</p>
 <section class="modal-section">
 <h3>Teacher's mission</h3>
 <p>
@@ -1469,17 +1593,17 @@
           </p>
 </section>
 <section class="modal-section">
-<h3>Improvements in progress</h3>
+<h3>Possible extensions</h3>
 <p>
-            Finalization of the accounting module: identifiers and screens,
-            correction, refusal, validation and payment. There also remain the postponements
-            late fees, validated totals, supporting documents, validation of
-            entries, locking of closed files, CSRF protection and management
-            sessions.
+            Possible extensions beyond the completed project include accounting
+            identifiers and screens, correction, refusal, validation and payment,
+            late-fee carryovers, validated totals, supporting documents, input
+            validation, locking of closed files, CSRF protection and session
+            management.
           </p>
 <p>
-            Documentation and demonstration data must also
-            be consolidated. The application is not presented as ready for
+            Documentation and demonstration data could also
+            be expanded. The application is not presented as ready for
             production.
           </p>
 </section>
@@ -1606,7 +1730,7 @@
 <button aria-label="Close details" class="modal-close" type="button">✕</button>
 </div>
 <h2 id="auth-php-title">PHP authentication system</h2>
-<p class="meta">Individual learning and portfolio project · Not intended for production use.</p>
+<p class="meta">Completed individual learning and portfolio project · Not intended for production use.</p>
 <div class="project-tags">
 <span>PHP</span><span>MariaDB</span><span>PDO</span><span>MVC</span><span>Sessions</span><span>Security</span>
 </div>
@@ -1657,6 +1781,7 @@
 <button aria-label="Close details" class="modal-close">✕</button>
 </div>
 <h2 id="htb-title">Hack The Box Academy</h2>
+<p>Roman Salamzada · @D4rkne33 · France<br/>Hack The Box — Level 32 · Skilled</p>
 <section class="modal-section">
 <h3>Completed modules</h3>
 <p>

@@ -2355,3 +2355,46 @@ thead {
   white-space: nowrap;
 }
 .language-switch:hover { color: #1d4ed8; }
+
+/* Legal pages share the portfolio's type, colors, spacing, and navigation. */
+.legal-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 68px 30px;
+  overflow-wrap: anywhere;
+}
+.legal-page h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+  margin-bottom: 16px;
+}
+.legal-section {
+  max-width: 850px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+.legal-section h2 {
+  font-size: 1.35rem;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.legal-section p + p {
+  margin-top: 12px;
+}
+.legal-page > .stage-link {
+  display: inline-block;
+  margin-top: 28px;
+}
+.certificate-id,
+.modal-section code {
+  overflow-wrap: anywhere;
+}
+.certificate-id {
+  font-size: 0.85rem;
+}
+@media (max-width: 768px) {
+  .legal-page {
+    padding: 45px 22px;
+  }
+}
